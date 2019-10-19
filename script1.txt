@@ -1,0 +1,88 @@
+======================================================
+Filename: script1.txt
+Running Test: ClassA
+Recursive: true
+CLASS NAME: ClassA
+   SUPERCLASS NAME: class java.lang.Object
+      CLASS NAME: java.lang.Object
+         CONSTRUCTOR NAME: java.lang.Object
+            - MODIFIER: public
+         METHOD NAME: finalize
+            - EXCEPTIONS THROWN: 
+               java.lang.Throwable
+            - RETURN TYPE: void
+            - MODIFIER: protected
+         METHOD NAME: wait
+            - EXCEPTIONS THROWN: 
+               java.lang.InterruptedException
+            - RETURN TYPE: void
+            - MODIFIER: public final
+         METHOD NAME: wait
+            - EXCEPTIONS THROWN: 
+               java.lang.InterruptedException
+            - PARAMETER TYPES: 
+               long
+               int
+            - RETURN TYPE: void
+            - MODIFIER: public final
+         METHOD NAME: wait
+            - EXCEPTIONS THROWN: 
+               java.lang.InterruptedException
+            - PARAMETER TYPES: 
+               long
+            - RETURN TYPE: void
+            - MODIFIER: public final native
+         METHOD NAME: equals
+            - PARAMETER TYPES: 
+               java.lang.Object
+            - RETURN TYPE: boolean
+            - MODIFIER: public
+         METHOD NAME: toString
+            - RETURN TYPE: class java.lang.String
+            - MODIFIER: public
+         METHOD NAME: hashCode
+            - RETURN TYPE: int
+            - MODIFIER: public native
+         METHOD NAME: getClass
+            - RETURN TYPE: class java.lang.Class
+            - MODIFIER: public final native
+         METHOD NAME: clone
+            - EXCEPTIONS THROWN: 
+               java.lang.CloneNotSupportedException
+            - RETURN TYPE: class java.lang.Object
+            - MODIFIER: protected native
+         METHOD NAME: notify
+            - RETURN TYPE: void
+            - MODIFIER: public final native
+         METHOD NAME: notifyAll
+            - RETURN TYPE: void
+            - MODIFIER: public final native
+         METHOD NAME: registerNatives
+            - RETURN TYPE: void
+            - MODIFIER: private static native
+   CONSTRUCTOR NAME: ClassA
+      - MODIFIER: public
+   CONSTRUCTOR NAME: ClassA
+      - PARAMETER TYPES: 
+         int
+      - MODIFIER: public
+   METHOD NAME: run
+      - RETURN TYPE: void
+      - MODIFIER: public
+   METHOD NAME: toString
+      - RETURN TYPE: class java.lang.String
+      - MODIFIER: public
+   METHOD NAME: setVal
+      - EXCEPTIONS THROWN: 
+         java.lang.Exception
+      - PARAMETER TYPES: 
+         int
+      - RETURN TYPE: void
+      - MODIFIER: public
+   METHOD NAME: printSomething
+      - RETURN TYPE: void
+      - MODIFIER: private
+   METHOD NAME: getVal
+      - RETURN TYPE: int
+      - MODIFIER: public
+======================================================
