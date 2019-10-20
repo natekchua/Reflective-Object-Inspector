@@ -1,572 +1,710 @@
 ======================================================
 Filename: script8.txt
 Running Test: Test String
-Recursive: true
-CLASS NAME: java.lang.String
-   SUPERCLASS NAME: class java.lang.Object
-      CLASS NAME: java.lang.Object
-         CONSTRUCTOR NAME: java.lang.Object
-            - MODIFIER: public
-         METHOD NAME: finalize
+Recursive: false
+CLASS: String
+   SUPERCLASS: Object
+      CLASS: Object
+         CONSTRUCTOR: 
+            - NAME: java.lang.Object
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.Throwable
+               InterruptedException
             - RETURN TYPE: void
-            - MODIFIER: protected
-         METHOD NAME: wait
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
-            - RETURN TYPE: void
-            - MODIFIER: public final
-         METHOD NAME: wait
-            - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
+               InterruptedException
             - PARAMETER TYPES: 
                long
                int
             - RETURN TYPE: void
-            - MODIFIER: public final
-         METHOD NAME: wait
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
+               InterruptedException
             - PARAMETER TYPES: 
                long
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: equals
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: equals
             - PARAMETER TYPES: 
-               java.lang.Object
+               Object
             - RETURN TYPE: boolean
-            - MODIFIER: public
-         METHOD NAME: toString
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: toString
             - RETURN TYPE: class java.lang.String
-            - MODIFIER: public
-         METHOD NAME: hashCode
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: hashCode
             - RETURN TYPE: int
-            - MODIFIER: public native
-         METHOD NAME: getClass
+            - MODIFIERS: public native
+         METHOD: 
+            - NAME: getClass
             - RETURN TYPE: class java.lang.Class
-            - MODIFIER: public final native
-         METHOD NAME: clone
-            - EXCEPTIONS THROWN: 
-               java.lang.CloneNotSupportedException
-            - RETURN TYPE: class java.lang.Object
-            - MODIFIER: protected native
-         METHOD NAME: notify
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: notify
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: notifyAll
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: notifyAll
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: registerNatives
-            - RETURN TYPE: void
-            - MODIFIER: private static native
-   CONSTRUCTOR NAME: java.lang.String
+            - MODIFIERS: public final native
+
+   INTERFACE: Serializable
+      CLASS: Serializable
+
+   INTERFACE: Comparable
+      CLASS: Comparable
+         METHOD: 
+            - NAME: compareTo
+            - PARAMETER TYPES: 
+               Object
+            - RETURN TYPE: int
+            - MODIFIERS: public abstract
+
+   INTERFACE: CharSequence
+      CLASS: CharSequence
+         METHOD: 
+            - NAME: toString
+            - RETURN TYPE: class java.lang.String
+            - MODIFIERS: public abstract
+         METHOD: 
+            - NAME: charAt
+            - PARAMETER TYPES: 
+               int
+            - RETURN TYPE: char
+            - MODIFIERS: public abstract
+         METHOD: 
+            - NAME: length
+            - RETURN TYPE: int
+            - MODIFIERS: public abstract
+         METHOD: 
+            - NAME: subSequence
+            - PARAMETER TYPES: 
+               int
+               int
+            - RETURN TYPE: interface java.lang.CharSequence
+            - MODIFIERS: public abstract
+         METHOD: 
+            - NAME: chars
+            - RETURN TYPE: interface java.util.stream.IntStream
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: codePoints
+            - RETURN TYPE: interface java.util.stream.IntStream
+            - MODIFIERS: public
+
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
+         byte[]
          int
          int
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
-         java.nio.charset.Charset
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         byte[]
+         Charset
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
-         java.lang.String
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         byte[]
+         String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
+         byte[]
          int
          int
-         java.nio.charset.Charset
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         Charset
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
+         byte[]
          int
          int
-         java.lang.String
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [C
-         boolean
-      - MODIFIER: 
-   CONSTRUCTOR NAME: java.lang.String
+         StringBuilder
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         java.lang.StringBuilder
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         StringBuffer
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         java.lang.StringBuffer
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         byte[]
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
-      - PARAMETER TYPES: 
-         [I
+         int[]
          int
          int
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [C
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         char[]
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         java.lang.String
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+         String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [C
+         char[]
          int
          int
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
+         byte[]
          int
-      - MODIFIER: public
-   CONSTRUCTOR NAME: java.lang.String
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: java.lang.String
       - PARAMETER TYPES: 
-         [B
+         byte[]
          int
          int
          int
-      - MODIFIER: public
-   METHOD NAME: equals
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: equals
       - PARAMETER TYPES: 
-         java.lang.Object
+         Object
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: toString
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toString
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: hashCode
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: hashCode
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: compareTo
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: compareTo
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: compareTo
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: compareTo
       - PARAMETER TYPES: 
-         java.lang.Object
+         Object
       - RETURN TYPE: int
-      - MODIFIER: public volatile
-   METHOD NAME: indexOf
+      - MODIFIERS: public volatile
+   METHOD: 
+      - NAME: indexOf
       - PARAMETER TYPES: 
-         java.lang.String
+         String
          int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: indexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: indexOf
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: indexOf
-      - PARAMETER TYPES: 
-         int
-         int
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: indexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: indexOf
       - PARAMETER TYPES: 
          int
+         int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: indexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: indexOf
       - PARAMETER TYPES: 
-         [C
-         int
-         int
-         [C
-         int
-         int
          int
       - RETURN TYPE: int
-      - MODIFIER: static
-   METHOD NAME: indexOf
-      - PARAMETER TYPES: 
-         [C
-         int
-         int
-         java.lang.String
-         int
-      - RETURN TYPE: int
-      - MODIFIER: static
-   METHOD NAME: valueOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          long
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          float
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          boolean
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
-         [C
+         char[]
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
-         [C
+         char[]
          int
          int
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
-         java.lang.Object
+         Object
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          char
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: valueOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: valueOf
       - PARAMETER TYPES: 
          double
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: charAt
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: charAt
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: char
-      - MODIFIER: public
-   METHOD NAME: checkBounds
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: codePointAt
       - PARAMETER TYPES: 
-         [B
          int
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: codePointBefore
+      - PARAMETER TYPES: 
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: codePointCount
+      - PARAMETER TYPES: 
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: compareToIgnoreCase
+      - PARAMETER TYPES: 
+         String
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: concat
+      - PARAMETER TYPES: 
+         String
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: contains
+      - PARAMETER TYPES: 
+         CharSequence
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: contentEquals
+      - PARAMETER TYPES: 
+         CharSequence
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: contentEquals
+      - PARAMETER TYPES: 
+         StringBuffer
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: copyValueOf
+      - PARAMETER TYPES: 
+         char[]
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: copyValueOf
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: endsWith
+      - PARAMETER TYPES: 
+         String
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: equalsIgnoreCase
+      - PARAMETER TYPES: 
+         String
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: format
+      - PARAMETER TYPES: 
+         Locale
+         String
+         Object[]
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public static transient
+   METHOD: 
+      - NAME: format
+      - PARAMETER TYPES: 
+         String
+         Object[]
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public static transient
+   METHOD: 
+      - NAME: getBytes
+      - PARAMETER TYPES: 
+         int
+         int
+         byte[]
          int
       - RETURN TYPE: void
-      - MODIFIER: private static
-   METHOD NAME: codePointAt
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getBytes
       - PARAMETER TYPES: 
-         int
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: codePointBefore
-      - PARAMETER TYPES: 
-         int
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: codePointCount
-      - PARAMETER TYPES: 
-         int
-         int
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: compareToIgnoreCase
-      - PARAMETER TYPES: 
-         java.lang.String
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: concat
-      - PARAMETER TYPES: 
-         java.lang.String
-      - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: contains
-      - PARAMETER TYPES: 
-         java.lang.CharSequence
-      - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: contentEquals
-      - PARAMETER TYPES: 
-         java.lang.CharSequence
-      - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: contentEquals
-      - PARAMETER TYPES: 
-         java.lang.StringBuffer
-      - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: copyValueOf
-      - PARAMETER TYPES: 
-         [C
-      - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: copyValueOf
-      - PARAMETER TYPES: 
-         [C
-         int
-         int
-      - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: endsWith
-      - PARAMETER TYPES: 
-         java.lang.String
-      - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: equalsIgnoreCase
-      - PARAMETER TYPES: 
-         java.lang.String
-      - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: format
-      - PARAMETER TYPES: 
-         java.util.Locale
-         java.lang.String
-         [Ljava.lang.Object;
-      - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static transient
-   METHOD NAME: format
-      - PARAMETER TYPES: 
-         java.lang.String
-         [Ljava.lang.Object;
-      - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static transient
-   METHOD NAME: getBytes
-      - PARAMETER TYPES: 
-         int
-         int
-         [B
-         int
-      - RETURN TYPE: void
-      - MODIFIER: public
-   METHOD NAME: getBytes
-      - PARAMETER TYPES: 
-         java.nio.charset.Charset
+         Charset
       - RETURN TYPE: class [B
-      - MODIFIER: public
-   METHOD NAME: getBytes
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getBytes
       - EXCEPTIONS THROWN: 
-         java.io.UnsupportedEncodingException
+         UnsupportedEncodingException
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: class [B
-      - MODIFIER: public
-   METHOD NAME: getBytes
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getBytes
       - RETURN TYPE: class [B
-      - MODIFIER: public
-   METHOD NAME: getChars
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getChars
       - PARAMETER TYPES: 
          int
          int
-         [C
+         char[]
          int
       - RETURN TYPE: void
-      - MODIFIER: public
-   METHOD NAME: getChars
-      - PARAMETER TYPES: 
-         [C
-         int
-      - RETURN TYPE: void
-      - MODIFIER: 
-   METHOD NAME: indexOfSupplementary
-      - PARAMETER TYPES: 
-         int
-         int
-      - RETURN TYPE: int
-      - MODIFIER: private
-   METHOD NAME: intern
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: intern
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public native
-   METHOD NAME: isEmpty
+      - MODIFIERS: public native
+   METHOD: 
+      - NAME: isEmpty
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: join
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: join
       - PARAMETER TYPES: 
-         java.lang.CharSequence
-         [Ljava.lang.CharSequence;
+         CharSequence
+         CharSequence[]
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static transient
-   METHOD NAME: join
+      - MODIFIERS: public static transient
+   METHOD: 
+      - NAME: join
       - PARAMETER TYPES: 
-         java.lang.CharSequence
-         java.lang.Iterable
+         CharSequence
+         Iterable
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public static
-   METHOD NAME: lastIndexOf
+      - MODIFIERS: public static
+   METHOD: 
+      - NAME: lastIndexOf
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: lastIndexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: lastIndexOf
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: lastIndexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: lastIndexOf
       - PARAMETER TYPES: 
-         [C
-         int
-         int
-         java.lang.String
-         int
-      - RETURN TYPE: int
-      - MODIFIER: static
-   METHOD NAME: lastIndexOf
-      - PARAMETER TYPES: 
-         java.lang.String
+         String
          int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: lastIndexOf
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: lastIndexOf
       - PARAMETER TYPES: 
          int
          int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: lastIndexOf
-      - PARAMETER TYPES: 
-         [C
-         int
-         int
-         [C
-         int
-         int
-         int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: length
       - RETURN TYPE: int
-      - MODIFIER: static
-   METHOD NAME: lastIndexOfSupplementary
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: matches
       - PARAMETER TYPES: 
-         int
-         int
-      - RETURN TYPE: int
-      - MODIFIER: private
-   METHOD NAME: length
-      - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: matches
-      - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: nonSyncContentEquals
-      - PARAMETER TYPES: 
-         java.lang.AbstractStringBuilder
-      - RETURN TYPE: boolean
-      - MODIFIER: private
-   METHOD NAME: offsetByCodePoints
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: offsetByCodePoints
       - PARAMETER TYPES: 
          int
          int
       - RETURN TYPE: int
-      - MODIFIER: public
-   METHOD NAME: regionMatches
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: regionMatches
       - PARAMETER TYPES: 
          int
-         java.lang.String
+         String
          int
          int
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: regionMatches
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: regionMatches
       - PARAMETER TYPES: 
          boolean
          int
-         java.lang.String
+         String
          int
          int
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: replace
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: replace
       - PARAMETER TYPES: 
          char
          char
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: replace
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: replace
       - PARAMETER TYPES: 
-         java.lang.CharSequence
-         java.lang.CharSequence
+         CharSequence
+         CharSequence
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: replaceAll
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: replaceAll
       - PARAMETER TYPES: 
-         java.lang.String
-         java.lang.String
+         String
+         String
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: replaceFirst
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: replaceFirst
       - PARAMETER TYPES: 
-         java.lang.String
-         java.lang.String
+         String
+         String
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: split
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: split
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: class [Ljava.lang.String;
-      - MODIFIER: public
-   METHOD NAME: split
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: split
       - PARAMETER TYPES: 
-         java.lang.String
+         String
          int
       - RETURN TYPE: class [Ljava.lang.String;
-      - MODIFIER: public
-   METHOD NAME: startsWith
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: startsWith
       - PARAMETER TYPES: 
-         java.lang.String
+         String
          int
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: startsWith
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: startsWith
       - PARAMETER TYPES: 
-         java.lang.String
+         String
       - RETURN TYPE: boolean
-      - MODIFIER: public
-   METHOD NAME: subSequence
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: subSequence
       - PARAMETER TYPES: 
          int
          int
       - RETURN TYPE: interface java.lang.CharSequence
-      - MODIFIER: public
-   METHOD NAME: substring
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: substring
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: substring
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: substring
       - PARAMETER TYPES: 
          int
          int
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: toCharArray
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toCharArray
       - RETURN TYPE: class [C
-      - MODIFIER: public
-   METHOD NAME: toLowerCase
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toLowerCase
       - PARAMETER TYPES: 
-         java.util.Locale
+         Locale
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: toLowerCase
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toLowerCase
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: toUpperCase
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toUpperCase
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: toUpperCase
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toUpperCase
       - PARAMETER TYPES: 
-         java.util.Locale
+         Locale
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: trim
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: trim
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - RETURN TYPE: void
+      - MODIFIERS: public final
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - PARAMETER TYPES: 
+         long
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: public final
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - PARAMETER TYPES: 
+         long
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: getClass
+      - RETURN TYPE: class java.lang.Class
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: notify
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: notifyAll
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: chars
+      - RETURN TYPE: interface java.util.stream.IntStream
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: codePoints
+      - RETURN TYPE: interface java.util.stream.IntStream
+      - MODIFIERS: public
+   FIELD: 
+      - NAME: value
+      - TYPE: char[]
+      - MODIFIERS: private final
+      - VALUE: 
+         COMPONENT TYPE: char
+         ARRAY LENGTH: 11
+         ARRAY CONTENTS: [
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+            - VALUE: [C@2b193f2d
+         ]
+   FIELD: 
+      - NAME: hash
+      - TYPE: int
+      - MODIFIERS: private
+      - VALUE: 0
+   FIELD: 
+      - NAME: serialVersionUID
+      - TYPE: long
+      - MODIFIERS: private static final
+      - VALUE: -6849794470754667710
+   FIELD: 
+      - NAME: serialPersistentFields
+      - TYPE: ObjectStreamField[]
+      - MODIFIERS: private static final
+      - VALUE: 
+         COMPONENT TYPE: ObjectStreamField
+         ARRAY LENGTH: 0
+         ARRAY CONTENTS: [
+         ]
+   FIELD: 
+      - NAME: CASE_INSENSITIVE_ORDER
+      - TYPE: Comparator
+      - MODIFIERS: public static final
+      REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@895328852
+
 ======================================================

@@ -1,88 +1,160 @@
 ======================================================
 Filename: script1.txt
 Running Test: ClassA
-Recursive: true
-CLASS NAME: ClassA
-   SUPERCLASS NAME: class java.lang.Object
-      CLASS NAME: java.lang.Object
-         CONSTRUCTOR NAME: java.lang.Object
-            - MODIFIER: public
-         METHOD NAME: finalize
+Recursive: false
+CLASS: ClassA
+   SUPERCLASS: Object
+      CLASS: Object
+         CONSTRUCTOR: 
+            - NAME: java.lang.Object
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.Throwable
+               InterruptedException
             - RETURN TYPE: void
-            - MODIFIER: protected
-         METHOD NAME: wait
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
-            - RETURN TYPE: void
-            - MODIFIER: public final
-         METHOD NAME: wait
-            - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
+               InterruptedException
             - PARAMETER TYPES: 
                long
                int
             - RETURN TYPE: void
-            - MODIFIER: public final
-         METHOD NAME: wait
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
             - EXCEPTIONS THROWN: 
-               java.lang.InterruptedException
+               InterruptedException
             - PARAMETER TYPES: 
                long
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: equals
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: equals
             - PARAMETER TYPES: 
-               java.lang.Object
+               Object
             - RETURN TYPE: boolean
-            - MODIFIER: public
-         METHOD NAME: toString
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: toString
             - RETURN TYPE: class java.lang.String
-            - MODIFIER: public
-         METHOD NAME: hashCode
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: hashCode
             - RETURN TYPE: int
-            - MODIFIER: public native
-         METHOD NAME: getClass
+            - MODIFIERS: public native
+         METHOD: 
+            - NAME: getClass
             - RETURN TYPE: class java.lang.Class
-            - MODIFIER: public final native
-         METHOD NAME: clone
-            - EXCEPTIONS THROWN: 
-               java.lang.CloneNotSupportedException
-            - RETURN TYPE: class java.lang.Object
-            - MODIFIER: protected native
-         METHOD NAME: notify
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: notify
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: notifyAll
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: notifyAll
             - RETURN TYPE: void
-            - MODIFIER: public final native
-         METHOD NAME: registerNatives
+            - MODIFIERS: public final native
+
+   INTERFACE: Serializable
+      CLASS: Serializable
+
+   INTERFACE: Runnable
+      CLASS: Runnable
+         METHOD: 
+            - NAME: run
             - RETURN TYPE: void
-            - MODIFIER: private static native
-   CONSTRUCTOR NAME: ClassA
-      - MODIFIER: public
-   CONSTRUCTOR NAME: ClassA
+            - MODIFIERS: public abstract
+
+   CONSTRUCTOR: 
+      - NAME: ClassA
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: ClassA
       - PARAMETER TYPES: 
          int
-      - MODIFIER: public
-   METHOD NAME: run
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: run
       - RETURN TYPE: void
-      - MODIFIER: public
-   METHOD NAME: toString
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toString
       - RETURN TYPE: class java.lang.String
-      - MODIFIER: public
-   METHOD NAME: setVal
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: setVal
       - EXCEPTIONS THROWN: 
-         java.lang.Exception
+         Exception
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: void
-      - MODIFIER: public
-   METHOD NAME: printSomething
-      - RETURN TYPE: void
-      - MODIFIER: private
-   METHOD NAME: getVal
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getVal
       - RETURN TYPE: int
-      - MODIFIER: public
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - RETURN TYPE: void
+      - MODIFIERS: public final
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - PARAMETER TYPES: 
+         long
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: public final
+   METHOD: 
+      - NAME: wait
+      - EXCEPTIONS THROWN: 
+         InterruptedException
+      - PARAMETER TYPES: 
+         long
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: equals
+      - PARAMETER TYPES: 
+         Object
+      - RETURN TYPE: boolean
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: hashCode
+      - RETURN TYPE: int
+      - MODIFIERS: public native
+   METHOD: 
+      - NAME: getClass
+      - RETURN TYPE: class java.lang.Class
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: notify
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   METHOD: 
+      - NAME: notifyAll
+      - RETURN TYPE: void
+      - MODIFIERS: public final native
+   FIELD: 
+      - NAME: val
+      - TYPE: int
+      - MODIFIERS: private
+      - VALUE: 3
+   FIELD: 
+      - NAME: val2
+      - TYPE: double
+      - MODIFIERS: private
+      - VALUE: 0.2
+   FIELD: 
+      - NAME: val3
+      - TYPE: boolean
+      - MODIFIERS: private
+      - VALUE: true
+
 ======================================================
