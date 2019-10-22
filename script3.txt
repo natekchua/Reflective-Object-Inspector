@@ -13,6 +13,12 @@ CLASS: ClassB
                         - NAME: java.lang.Object
                         - MODIFIERS: public
                      METHOD: 
+                        - NAME: finalize
+                        - EXCEPTIONS THROWN: 
+                           Throwable
+                        - RETURN TYPE: void
+                        - MODIFIERS: protected
+                     METHOD: 
                         - NAME: wait
                         - EXCEPTIONS THROWN: 
                            InterruptedException
@@ -54,6 +60,12 @@ CLASS: ClassB
                         - RETURN TYPE: class java.lang.Class
                         - MODIFIERS: public final native
                      METHOD: 
+                        - NAME: clone
+                        - EXCEPTIONS THROWN: 
+                           CloneNotSupportedException
+                        - RETURN TYPE: class java.lang.Object
+                        - MODIFIERS: protected native
+                     METHOD: 
                         - NAME: notify
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
@@ -61,6 +73,10 @@ CLASS: ClassB
                         - NAME: notifyAll
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
+                     METHOD: 
+                        - NAME: registerNatives
+                        - RETURN TYPE: void
+                        - MODIFIERS: private static native
 
                CONSTRUCTOR: 
                   - NAME: ClassD
@@ -78,62 +94,22 @@ CLASS: ClassB
                   - NAME: getVal3
                   - RETURN TYPE: int
                   - MODIFIERS: public
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - PARAMETER TYPES: 
-                     long
-                     int
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - PARAMETER TYPES: 
-                     long
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: equals
-                  - PARAMETER TYPES: 
-                     Object
-                  - RETURN TYPE: boolean
-                  - MODIFIERS: public
-               METHOD: 
-                  - NAME: hashCode
-                  - RETURN TYPE: int
-                  - MODIFIERS: public native
-               METHOD: 
-                  - NAME: getClass
-                  - RETURN TYPE: class java.lang.Class
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: notify
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: notifyAll
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
                FIELD: 
                   - NAME: val
                   - TYPE: ClassA
                   - MODIFIERS: private
-                  - VALUE: 
                      CLASS: ClassA
                         SUPERCLASS: Object
                            CLASS: Object
                               CONSTRUCTOR: 
                                  - NAME: java.lang.Object
                                  - MODIFIERS: public
+                              METHOD: 
+                                 - NAME: finalize
+                                 - EXCEPTIONS THROWN: 
+                                    Throwable
+                                 - RETURN TYPE: void
+                                 - MODIFIERS: protected
                               METHOD: 
                                  - NAME: wait
                                  - EXCEPTIONS THROWN: 
@@ -176,6 +152,12 @@ CLASS: ClassB
                                  - RETURN TYPE: class java.lang.Class
                                  - MODIFIERS: public final native
                               METHOD: 
+                                 - NAME: clone
+                                 - EXCEPTIONS THROWN: 
+                                    CloneNotSupportedException
+                                 - RETURN TYPE: class java.lang.Object
+                                 - MODIFIERS: protected native
+                              METHOD: 
                                  - NAME: notify
                                  - RETURN TYPE: void
                                  - MODIFIERS: public final native
@@ -183,6 +165,10 @@ CLASS: ClassB
                                  - NAME: notifyAll
                                  - RETURN TYPE: void
                                  - MODIFIERS: public final native
+                              METHOD: 
+                                 - NAME: registerNatives
+                                 - RETURN TYPE: void
+                                 - MODIFIERS: private static native
 
                         INTERFACE: Serializable
                            CLASS: Serializable
@@ -219,54 +205,13 @@ CLASS: ClassB
                            - RETURN TYPE: void
                            - MODIFIERS: public
                         METHOD: 
+                           - NAME: printSomething
+                           - RETURN TYPE: void
+                           - MODIFIERS: private
+                        METHOD: 
                            - NAME: getVal
                            - RETURN TYPE: int
                            - MODIFIERS: public
-                        METHOD: 
-                           - NAME: wait
-                           - EXCEPTIONS THROWN: 
-                              InterruptedException
-                           - RETURN TYPE: void
-                           - MODIFIERS: public final
-                        METHOD: 
-                           - NAME: wait
-                           - EXCEPTIONS THROWN: 
-                              InterruptedException
-                           - PARAMETER TYPES: 
-                              long
-                              int
-                           - RETURN TYPE: void
-                           - MODIFIERS: public final
-                        METHOD: 
-                           - NAME: wait
-                           - EXCEPTIONS THROWN: 
-                              InterruptedException
-                           - PARAMETER TYPES: 
-                              long
-                           - RETURN TYPE: void
-                           - MODIFIERS: public final native
-                        METHOD: 
-                           - NAME: equals
-                           - PARAMETER TYPES: 
-                              Object
-                           - RETURN TYPE: boolean
-                           - MODIFIERS: public
-                        METHOD: 
-                           - NAME: hashCode
-                           - RETURN TYPE: int
-                           - MODIFIERS: public native
-                        METHOD: 
-                           - NAME: getClass
-                           - RETURN TYPE: class java.lang.Class
-                           - MODIFIERS: public final native
-                        METHOD: 
-                           - NAME: notify
-                           - RETURN TYPE: void
-                           - MODIFIERS: public final native
-                        METHOD: 
-                           - NAME: notifyAll
-                           - RETURN TYPE: void
-                           - MODIFIERS: public final native
                         FIELD: 
                            - NAME: val
                            - TYPE: int
@@ -298,7 +243,7 @@ CLASS: ClassB
                   - TYPE: ClassA[]
                   - MODIFIERS: private
                   - VALUE: 
-                     ARRAY NAME: 
+                     ARRAY: 
                      COMPONENT TYPE: ClassA
                      ARRAY LENGTH: 10
                      ARRAY CONTENTS: [
@@ -349,15 +294,6 @@ CLASS: ClassB
                      String
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
-               METHOD: 
-                  - NAME: func0
-                  - EXCEPTIONS THROWN: 
-                     Exception
-                  - PARAMETER TYPES: 
-                     int
-                     boolean
-                  - RETURN TYPE: void
-                  - MODIFIERS: public abstract
 
          CONSTRUCTOR: 
             - NAME: ClassC
@@ -376,12 +312,6 @@ CLASS: ClassB
             - NAME: toString
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
-         METHOD: 
-            - NAME: func3
-            - PARAMETER TYPES: 
-               int
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
          METHOD: 
             - NAME: func0
             - EXCEPTIONS THROWN: 
@@ -413,65 +343,27 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: getVal3
-            - RETURN TYPE: int
-            - MODIFIERS: public
-         METHOD: 
-            - NAME: wait
-            - EXCEPTIONS THROWN: 
-               InterruptedException
-            - RETURN TYPE: void
-            - MODIFIERS: public final
-         METHOD: 
-            - NAME: wait
-            - EXCEPTIONS THROWN: 
-               InterruptedException
+            - NAME: func3
             - PARAMETER TYPES: 
-               long
                int
             - RETURN TYPE: void
-            - MODIFIERS: public final
-         METHOD: 
-            - NAME: wait
-            - EXCEPTIONS THROWN: 
-               InterruptedException
-            - PARAMETER TYPES: 
-               long
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: equals
-            - PARAMETER TYPES: 
-               Object
-            - RETURN TYPE: boolean
-            - MODIFIERS: public
-         METHOD: 
-            - NAME: hashCode
-            - RETURN TYPE: int
-            - MODIFIERS: public native
-         METHOD: 
-            - NAME: getClass
-            - RETURN TYPE: class java.lang.Class
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: notify
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: notifyAll
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
+            - MODIFIERS: public abstract
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
             - MODIFIERS: private
-            - VALUE: 
                CLASS: ClassA
                   SUPERCLASS: Object
                      CLASS: Object
                         CONSTRUCTOR: 
                            - NAME: java.lang.Object
                            - MODIFIERS: public
+                        METHOD: 
+                           - NAME: finalize
+                           - EXCEPTIONS THROWN: 
+                              Throwable
+                           - RETURN TYPE: void
+                           - MODIFIERS: protected
                         METHOD: 
                            - NAME: wait
                            - EXCEPTIONS THROWN: 
@@ -514,6 +406,12 @@ CLASS: ClassB
                            - RETURN TYPE: class java.lang.Class
                            - MODIFIERS: public final native
                         METHOD: 
+                           - NAME: clone
+                           - EXCEPTIONS THROWN: 
+                              CloneNotSupportedException
+                           - RETURN TYPE: class java.lang.Object
+                           - MODIFIERS: protected native
+                        METHOD: 
                            - NAME: notify
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
@@ -521,6 +419,10 @@ CLASS: ClassB
                            - NAME: notifyAll
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
+                        METHOD: 
+                           - NAME: registerNatives
+                           - RETURN TYPE: void
+                           - MODIFIERS: private static native
 
                   INTERFACE: Serializable
                      CLASS: Serializable
@@ -557,54 +459,13 @@ CLASS: ClassB
                      - RETURN TYPE: void
                      - MODIFIERS: public
                   METHOD: 
+                     - NAME: printSomething
+                     - RETURN TYPE: void
+                     - MODIFIERS: private
+                  METHOD: 
                      - NAME: getVal
                      - RETURN TYPE: int
                      - MODIFIERS: public
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                        int
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: equals
-                     - PARAMETER TYPES: 
-                        Object
-                     - RETURN TYPE: boolean
-                     - MODIFIERS: public
-                  METHOD: 
-                     - NAME: hashCode
-                     - RETURN TYPE: int
-                     - MODIFIERS: public native
-                  METHOD: 
-                     - NAME: getClass
-                     - RETURN TYPE: class java.lang.Class
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notify
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notifyAll
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
                   FIELD: 
                      - NAME: val
                      - TYPE: int
@@ -625,13 +486,18 @@ CLASS: ClassB
             - NAME: val3
             - TYPE: ClassA
             - MODIFIERS: private
-            - VALUE: 
                CLASS: ClassA
                   SUPERCLASS: Object
                      CLASS: Object
                         CONSTRUCTOR: 
                            - NAME: java.lang.Object
                            - MODIFIERS: public
+                        METHOD: 
+                           - NAME: finalize
+                           - EXCEPTIONS THROWN: 
+                              Throwable
+                           - RETURN TYPE: void
+                           - MODIFIERS: protected
                         METHOD: 
                            - NAME: wait
                            - EXCEPTIONS THROWN: 
@@ -674,6 +540,12 @@ CLASS: ClassB
                            - RETURN TYPE: class java.lang.Class
                            - MODIFIERS: public final native
                         METHOD: 
+                           - NAME: clone
+                           - EXCEPTIONS THROWN: 
+                              CloneNotSupportedException
+                           - RETURN TYPE: class java.lang.Object
+                           - MODIFIERS: protected native
+                        METHOD: 
                            - NAME: notify
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
@@ -681,6 +553,10 @@ CLASS: ClassB
                            - NAME: notifyAll
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
+                        METHOD: 
+                           - NAME: registerNatives
+                           - RETURN TYPE: void
+                           - MODIFIERS: private static native
 
                   INTERFACE: Serializable
                      CLASS: Serializable
@@ -717,54 +593,13 @@ CLASS: ClassB
                      - RETURN TYPE: void
                      - MODIFIERS: public
                   METHOD: 
+                     - NAME: printSomething
+                     - RETURN TYPE: void
+                     - MODIFIERS: private
+                  METHOD: 
                      - NAME: getVal
                      - RETURN TYPE: int
                      - MODIFIERS: public
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                        int
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: equals
-                     - PARAMETER TYPES: 
-                        Object
-                     - RETURN TYPE: boolean
-                     - MODIFIERS: public
-                  METHOD: 
-                     - NAME: hashCode
-                     - RETURN TYPE: int
-                     - MODIFIERS: public native
-                  METHOD: 
-                     - NAME: getClass
-                     - RETURN TYPE: class java.lang.Class
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notify
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notifyAll
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
                   FIELD: 
                      - NAME: val
                      - TYPE: int
@@ -785,13 +620,18 @@ CLASS: ClassB
             - NAME: val4
             - TYPE: ClassA
             - MODIFIERS: private
-            - VALUE: 
                CLASS: ClassA
                   SUPERCLASS: Object
                      CLASS: Object
                         CONSTRUCTOR: 
                            - NAME: java.lang.Object
                            - MODIFIERS: public
+                        METHOD: 
+                           - NAME: finalize
+                           - EXCEPTIONS THROWN: 
+                              Throwable
+                           - RETURN TYPE: void
+                           - MODIFIERS: protected
                         METHOD: 
                            - NAME: wait
                            - EXCEPTIONS THROWN: 
@@ -834,6 +674,12 @@ CLASS: ClassB
                            - RETURN TYPE: class java.lang.Class
                            - MODIFIERS: public final native
                         METHOD: 
+                           - NAME: clone
+                           - EXCEPTIONS THROWN: 
+                              CloneNotSupportedException
+                           - RETURN TYPE: class java.lang.Object
+                           - MODIFIERS: protected native
+                        METHOD: 
                            - NAME: notify
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
@@ -841,6 +687,10 @@ CLASS: ClassB
                            - NAME: notifyAll
                            - RETURN TYPE: void
                            - MODIFIERS: public final native
+                        METHOD: 
+                           - NAME: registerNatives
+                           - RETURN TYPE: void
+                           - MODIFIERS: private static native
 
                   INTERFACE: Serializable
                      CLASS: Serializable
@@ -877,54 +727,13 @@ CLASS: ClassB
                      - RETURN TYPE: void
                      - MODIFIERS: public
                   METHOD: 
+                     - NAME: printSomething
+                     - RETURN TYPE: void
+                     - MODIFIERS: private
+                  METHOD: 
                      - NAME: getVal
                      - RETURN TYPE: int
                      - MODIFIERS: public
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                        int
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final
-                  METHOD: 
-                     - NAME: wait
-                     - EXCEPTIONS THROWN: 
-                        InterruptedException
-                     - PARAMETER TYPES: 
-                        long
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: equals
-                     - PARAMETER TYPES: 
-                        Object
-                     - RETURN TYPE: boolean
-                     - MODIFIERS: public
-                  METHOD: 
-                     - NAME: hashCode
-                     - RETURN TYPE: int
-                     - MODIFIERS: public native
-                  METHOD: 
-                     - NAME: getClass
-                     - RETURN TYPE: class java.lang.Class
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notify
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
-                  METHOD: 
-                     - NAME: notifyAll
-                     - RETURN TYPE: void
-                     - MODIFIERS: public final native
                   FIELD: 
                      - NAME: val
                      - TYPE: int
@@ -966,96 +775,22 @@ CLASS: ClassB
          int
       - RETURN TYPE: void
       - MODIFIERS: public
-   METHOD: 
-      - NAME: func0
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-         boolean
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: func2
-      - EXCEPTIONS THROWN: 
-         Exception
-         ArithmeticException
-         IllegalMonitorStateException
-      - PARAMETER TYPES: 
-         String
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: func1
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-         double
-         boolean
-         String
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: getVal3
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: equals
-      - PARAMETER TYPES: 
-         Object
-      - RETURN TYPE: boolean
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: hashCode
-      - RETURN TYPE: int
-      - MODIFIERS: public native
-   METHOD: 
-      - NAME: getClass
-      - RETURN TYPE: class java.lang.Class
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notify
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notifyAll
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
    FIELD: 
       - NAME: val
       - TYPE: ClassA
       - MODIFIERS: private
-      - VALUE: 
          CLASS: ClassA
             SUPERCLASS: Object
                CLASS: Object
                   CONSTRUCTOR: 
                      - NAME: java.lang.Object
                      - MODIFIERS: public
+                  METHOD: 
+                     - NAME: finalize
+                     - EXCEPTIONS THROWN: 
+                        Throwable
+                     - RETURN TYPE: void
+                     - MODIFIERS: protected
                   METHOD: 
                      - NAME: wait
                      - EXCEPTIONS THROWN: 
@@ -1098,6 +833,12 @@ CLASS: ClassB
                      - RETURN TYPE: class java.lang.Class
                      - MODIFIERS: public final native
                   METHOD: 
+                     - NAME: clone
+                     - EXCEPTIONS THROWN: 
+                        CloneNotSupportedException
+                     - RETURN TYPE: class java.lang.Object
+                     - MODIFIERS: protected native
+                  METHOD: 
                      - NAME: notify
                      - RETURN TYPE: void
                      - MODIFIERS: public final native
@@ -1105,6 +846,10 @@ CLASS: ClassB
                      - NAME: notifyAll
                      - RETURN TYPE: void
                      - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: registerNatives
+                     - RETURN TYPE: void
+                     - MODIFIERS: private static native
 
             INTERFACE: Serializable
                CLASS: Serializable
@@ -1141,54 +886,13 @@ CLASS: ClassB
                - RETURN TYPE: void
                - MODIFIERS: public
             METHOD: 
+               - NAME: printSomething
+               - RETURN TYPE: void
+               - MODIFIERS: private
+            METHOD: 
                - NAME: getVal
                - RETURN TYPE: int
                - MODIFIERS: public
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-                  int
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: equals
-               - PARAMETER TYPES: 
-                  Object
-               - RETURN TYPE: boolean
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: hashCode
-               - RETURN TYPE: int
-               - MODIFIERS: public native
-            METHOD: 
-               - NAME: getClass
-               - RETURN TYPE: class java.lang.Class
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: notify
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: notifyAll
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
             FIELD: 
                - NAME: val
                - TYPE: int
@@ -1209,13 +913,18 @@ CLASS: ClassB
       - NAME: val2
       - TYPE: ClassA
       - MODIFIERS: private
-      - VALUE: 
          CLASS: ClassA
             SUPERCLASS: Object
                CLASS: Object
                   CONSTRUCTOR: 
                      - NAME: java.lang.Object
                      - MODIFIERS: public
+                  METHOD: 
+                     - NAME: finalize
+                     - EXCEPTIONS THROWN: 
+                        Throwable
+                     - RETURN TYPE: void
+                     - MODIFIERS: protected
                   METHOD: 
                      - NAME: wait
                      - EXCEPTIONS THROWN: 
@@ -1258,6 +967,12 @@ CLASS: ClassB
                      - RETURN TYPE: class java.lang.Class
                      - MODIFIERS: public final native
                   METHOD: 
+                     - NAME: clone
+                     - EXCEPTIONS THROWN: 
+                        CloneNotSupportedException
+                     - RETURN TYPE: class java.lang.Object
+                     - MODIFIERS: protected native
+                  METHOD: 
                      - NAME: notify
                      - RETURN TYPE: void
                      - MODIFIERS: public final native
@@ -1265,6 +980,10 @@ CLASS: ClassB
                      - NAME: notifyAll
                      - RETURN TYPE: void
                      - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: registerNatives
+                     - RETURN TYPE: void
+                     - MODIFIERS: private static native
 
             INTERFACE: Serializable
                CLASS: Serializable
@@ -1301,54 +1020,13 @@ CLASS: ClassB
                - RETURN TYPE: void
                - MODIFIERS: public
             METHOD: 
+               - NAME: printSomething
+               - RETURN TYPE: void
+               - MODIFIERS: private
+            METHOD: 
                - NAME: getVal
                - RETURN TYPE: int
                - MODIFIERS: public
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-                  int
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: equals
-               - PARAMETER TYPES: 
-                  Object
-               - RETURN TYPE: boolean
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: hashCode
-               - RETURN TYPE: int
-               - MODIFIERS: public native
-            METHOD: 
-               - NAME: getClass
-               - RETURN TYPE: class java.lang.Class
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: notify
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: notifyAll
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
             FIELD: 
                - NAME: val
                - TYPE: int

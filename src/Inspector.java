@@ -92,7 +92,7 @@ public class Inspector {
     method to inspect methods: prints method name, exceptions (if any), parameters (if any), return type, and modifiers.
      */
     private void inspectMethods(Class c, int depth) {
-        Method[] methods = c.getMethods();                             //gets all methods of any visibility in Class "c"
+        Method[] methods = c.getDeclaredMethods();                             //gets all methods of any visibility in Class "c"
 
         if(methods.length > 0){                                        //check that at least one method exists
             for(Method method : methods){
@@ -145,15 +145,8 @@ public class Inspector {
                     else if(type.isArray()) {                                   //if field type is an array
                         format("- VALUE: ", depth + 1);
                         inspectArray(type, val, recursive, depth + 1);
-                    }else {                              //this is the case when the field is an object reference value.
-                        if(!recursive)                   //if recursive is false -> print reference
-                            format("- REFERENCE VALUE: " + val.getClass().getName() + "@" + System.identityHashCode(val), depth + 1);
-                        else {
-                            format("- VALUE: ", depth + 1);
-                            inspectClass(type, val, true, depth + 2); //recursively inspect field in same
-                                                                                    //manner as an object
-                        }
-                    }
+                    }else                             //this is the case when the field is an object reference value.
+                        recursiveIntrospection(val, recursive, depth + 2);
                 }
                 catch(IllegalAccessException e){
                     e.printStackTrace();
@@ -168,7 +161,7 @@ public class Inspector {
     inspected in the same manner as an object.
    */
     private void inspectArray(Class c, Object obj, boolean recursive, int depth) {
-        format("ARRAY NAME: ", depth+1);          //figure out how to get array name***
+        format("ARRAY: ", depth+1);          //figure out how to get array name***
 
         Class compType = c.getComponentType();
         format("COMPONENT TYPE: " + compType.getSimpleName(), depth+1);
@@ -187,14 +180,23 @@ public class Inspector {
             else if(compType.isArray()) {                           //if component type of array is another array
                 format("- VALUE: ", depth + 2);
                 inspectArray(element.getClass(), element, recursive, depth + 2);
-            }else{
-                if(!recursive)                                      //if recursive is set to false -> print reference
-                    format("- VALUE: " + element.getClass().getName() + "@" + System.identityHashCode(element), depth+1);
-                else
-                    inspectClass(element.getClass(), element, true, depth+2);   //recursively inspect array as an object
-            }
+            }else
+                recursiveIntrospection(element, recursive, depth + 2);
         }
         format("]", depth+1);
+    }
+
+    /*
+    method used for further field (including arrays) introspection.
+    if recursive is false, information is simply found of for the field, otherwise
+    we further inspect the field/array in the same manner of a regular object.
+     */
+    private void recursiveIntrospection(Object obj, boolean recursive, int depth) {
+        if (!recursive) {
+            format("- REFERENCE VALUE: " + obj.getClass().getName() + "@" + System.identityHashCode(obj), depth);
+        } else {
+            inspectClass(obj.getClass(), obj, recursive, depth);
+        }
     }
 
     /*
@@ -209,8 +211,8 @@ public class Inspector {
     method to format indentation for output; pads left side of str with intervals of 3 spaces
     depending on the depth.
      */
-    private void format(Object message, int depth){
-        String str = String.valueOf(message);
+    private void format(Object obj, int depth){
+        String str = String.valueOf(obj);
         for(int i = 0; i < depth; i++)
             System.out.print("   "); //I used 3 spaces, indentation using tab not as clean
         System.out.println(str);

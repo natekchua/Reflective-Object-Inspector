@@ -9,6 +9,12 @@ CLASS: String
             - NAME: java.lang.Object
             - MODIFIERS: public
          METHOD: 
+            - NAME: finalize
+            - EXCEPTIONS THROWN: 
+               Throwable
+            - RETURN TYPE: void
+            - MODIFIERS: protected
+         METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
                InterruptedException
@@ -50,6 +56,12 @@ CLASS: String
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
+            - NAME: clone
+            - EXCEPTIONS THROWN: 
+               CloneNotSupportedException
+            - RETURN TYPE: class java.lang.Object
+            - MODIFIERS: protected native
+         METHOD: 
             - NAME: notify
             - RETURN TYPE: void
             - MODIFIERS: public final native
@@ -57,6 +69,10 @@ CLASS: String
             - NAME: notifyAll
             - RETURN TYPE: void
             - MODIFIERS: public final native
+         METHOD: 
+            - NAME: registerNatives
+            - RETURN TYPE: void
+            - MODIFIERS: private static native
 
    INTERFACE: Serializable
       CLASS: Serializable
@@ -101,6 +117,14 @@ CLASS: String
             - NAME: codePoints
             - RETURN TYPE: interface java.util.stream.IntStream
             - MODIFIERS: public
+         METHOD: 
+            - NAME: lambda$chars$0
+            - RETURN TYPE: interface java.util.Spliterator$OfInt
+            - MODIFIERS: private
+         METHOD: 
+            - NAME: lambda$codePoints$1
+            - RETURN TYPE: interface java.util.Spliterator$OfInt
+            - MODIFIERS: private
 
    CONSTRUCTOR: 
       - NAME: java.lang.String
@@ -246,6 +270,28 @@ CLASS: String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
+      - NAME: indexOf
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         char[]
+         int
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: indexOf
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         String
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
       - NAME: valueOf
       - PARAMETER TYPES: 
          int
@@ -307,6 +353,14 @@ CLASS: String
          int
       - RETURN TYPE: char
       - MODIFIERS: public
+   METHOD: 
+      - NAME: checkBounds
+      - PARAMETER TYPES: 
+         byte[]
+         int
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: private static
    METHOD: 
       - NAME: codePointAt
       - PARAMETER TYPES: 
@@ -434,6 +488,20 @@ CLASS: String
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
+      - NAME: getChars
+      - PARAMETER TYPES: 
+         char[]
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: 
+   METHOD: 
+      - NAME: indexOfSupplementary
+      - PARAMETER TYPES: 
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: private
+   METHOD: 
       - NAME: intern
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public native
@@ -470,6 +538,16 @@ CLASS: String
    METHOD: 
       - NAME: lastIndexOf
       - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         String
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: lastIndexOf
+      - PARAMETER TYPES: 
          String
          int
       - RETURN TYPE: int
@@ -482,6 +560,25 @@ CLASS: String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
+      - NAME: lastIndexOf
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         char[]
+         int
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: lastIndexOfSupplementary
+      - PARAMETER TYPES: 
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: private
+   METHOD: 
       - NAME: length
       - RETURN TYPE: int
       - MODIFIERS: public
@@ -491,6 +588,12 @@ CLASS: String
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
+   METHOD: 
+      - NAME: nonSyncContentEquals
+      - PARAMETER TYPES: 
+         AbstractStringBuilder
+      - RETURN TYPE: boolean
+      - MODIFIERS: private
    METHOD: 
       - NAME: offsetByCodePoints
       - PARAMETER TYPES: 
@@ -619,55 +722,12 @@ CLASS: String
       - NAME: trim
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: getClass
-      - RETURN TYPE: class java.lang.Class
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notify
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notifyAll
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: chars
-      - RETURN TYPE: interface java.util.stream.IntStream
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: codePoints
-      - RETURN TYPE: interface java.util.stream.IntStream
-      - MODIFIERS: public
    FIELD: 
       - NAME: value
       - TYPE: char[]
       - MODIFIERS: private final
       - VALUE: 
-         ARRAY NAME: 
+         ARRAY: 
          COMPONENT TYPE: char
          ARRAY LENGTH: 11
          ARRAY CONTENTS: [
@@ -698,7 +758,7 @@ CLASS: String
       - TYPE: ObjectStreamField[]
       - MODIFIERS: private static final
       - VALUE: 
-         ARRAY NAME: 
+         ARRAY: 
          COMPONENT TYPE: ObjectStreamField
          ARRAY LENGTH: 0
          ARRAY CONTENTS: [
@@ -707,113 +767,267 @@ CLASS: String
       - NAME: CASE_INSENSITIVE_ORDER
       - TYPE: Comparator
       - MODIFIERS: public static final
-      - VALUE: 
-         CLASS: Comparator
-            METHOD: 
-               - NAME: equals
-               - PARAMETER TYPES: 
-                  Object
-               - RETURN TYPE: boolean
-               - MODIFIERS: public abstract
+         CLASS: CaseInsensitiveComparator
+            SUPERCLASS: Object
+               CLASS: Object
+                  CONSTRUCTOR: 
+                     - NAME: java.lang.Object
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: finalize
+                     - EXCEPTIONS THROWN: 
+                        Throwable
+                     - RETURN TYPE: void
+                     - MODIFIERS: protected
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - PARAMETER TYPES: 
+                        long
+                        int
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - PARAMETER TYPES: 
+                        long
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: equals
+                     - PARAMETER TYPES: 
+                        Object
+                     - RETURN TYPE: boolean
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: toString
+                     - RETURN TYPE: class java.lang.String
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: hashCode
+                     - RETURN TYPE: int
+                     - MODIFIERS: public native
+                  METHOD: 
+                     - NAME: getClass
+                     - RETURN TYPE: class java.lang.Class
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: clone
+                     - EXCEPTIONS THROWN: 
+                        CloneNotSupportedException
+                     - RETURN TYPE: class java.lang.Object
+                     - MODIFIERS: protected native
+                  METHOD: 
+                     - NAME: notify
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: notifyAll
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: registerNatives
+                     - RETURN TYPE: void
+                     - MODIFIERS: private static native
+
+            INTERFACE: Comparator
+               CLASS: Comparator
+                  METHOD: 
+                     - NAME: equals
+                     - PARAMETER TYPES: 
+                        Object
+                     - RETURN TYPE: boolean
+                     - MODIFIERS: public abstract
+                  METHOD: 
+                     - NAME: compare
+                     - PARAMETER TYPES: 
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: public abstract
+                  METHOD: 
+                     - NAME: $deserializeLambda$
+                     - PARAMETER TYPES: 
+                        SerializedLambda
+                     - RETURN TYPE: class java.lang.Object
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: comparing
+                     - PARAMETER TYPES: 
+                        Function
+                        Comparator
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: comparing
+                     - PARAMETER TYPES: 
+                        Function
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: comparingDouble
+                     - PARAMETER TYPES: 
+                        ToDoubleFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: comparingInt
+                     - PARAMETER TYPES: 
+                        ToIntFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: comparingLong
+                     - PARAMETER TYPES: 
+                        ToLongFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: lambda$comparing$77a9974f$1
+                     - PARAMETER TYPES: 
+                        Function
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: lambda$comparing$ea9a8b3a$1
+                     - PARAMETER TYPES: 
+                        Comparator
+                        Function
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: lambda$comparingDouble$8dcf42ea$1
+                     - PARAMETER TYPES: 
+                        ToDoubleFunction
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: lambda$comparingInt$7b0bb60$1
+                     - PARAMETER TYPES: 
+                        ToIntFunction
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: lambda$comparingLong$6043328a$1
+                     - PARAMETER TYPES: 
+                        ToLongFunction
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private static
+                  METHOD: 
+                     - NAME: lambda$thenComparing$36697e65$1
+                     - PARAMETER TYPES: 
+                        Comparator
+                        Object
+                        Object
+                     - RETURN TYPE: int
+                     - MODIFIERS: private
+                  METHOD: 
+                     - NAME: naturalOrder
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: nullsFirst
+                     - PARAMETER TYPES: 
+                        Comparator
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: nullsLast
+                     - PARAMETER TYPES: 
+                        Comparator
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: reverseOrder
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public static
+                  METHOD: 
+                     - NAME: reversed
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparing
+                     - PARAMETER TYPES: 
+                        Function
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparing
+                     - PARAMETER TYPES: 
+                        Comparator
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparing
+                     - PARAMETER TYPES: 
+                        Function
+                        Comparator
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparingDouble
+                     - PARAMETER TYPES: 
+                        ToDoubleFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparingInt
+                     - PARAMETER TYPES: 
+                        ToIntFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: thenComparingLong
+                     - PARAMETER TYPES: 
+                        ToLongFunction
+                     - RETURN TYPE: interface java.util.Comparator
+                     - MODIFIERS: public
+
+            INTERFACE: Serializable
+               CLASS: Serializable
+
             METHOD: 
                - NAME: compare
                - PARAMETER TYPES: 
                   Object
                   Object
                - RETURN TYPE: int
-               - MODIFIERS: public abstract
+               - MODIFIERS: public volatile
             METHOD: 
-               - NAME: comparing
+               - NAME: compare
                - PARAMETER TYPES: 
-                  Function
-                  Comparator
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: comparing
-               - PARAMETER TYPES: 
-                  Function
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: comparingDouble
-               - PARAMETER TYPES: 
-                  ToDoubleFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: comparingInt
-               - PARAMETER TYPES: 
-                  ToIntFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: comparingLong
-               - PARAMETER TYPES: 
-                  ToLongFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: naturalOrder
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: nullsFirst
-               - PARAMETER TYPES: 
-                  Comparator
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: nullsLast
-               - PARAMETER TYPES: 
-                  Comparator
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: reverseOrder
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public static
-            METHOD: 
-               - NAME: reversed
-               - RETURN TYPE: interface java.util.Comparator
+                  String
+                  String
+               - RETURN TYPE: int
                - MODIFIERS: public
             METHOD: 
-               - NAME: thenComparing
-               - PARAMETER TYPES: 
-                  Function
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: thenComparing
-               - PARAMETER TYPES: 
-                  Comparator
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: thenComparing
-               - PARAMETER TYPES: 
-                  Function
-                  Comparator
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: thenComparingDouble
-               - PARAMETER TYPES: 
-                  ToDoubleFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: thenComparingInt
-               - PARAMETER TYPES: 
-                  ToIntFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: thenComparingLong
-               - PARAMETER TYPES: 
-                  ToLongFunction
-               - RETURN TYPE: interface java.util.Comparator
-               - MODIFIERS: public
+               - NAME: readResolve
+               - RETURN TYPE: class java.lang.Object
+               - MODIFIERS: private
+            FIELD: 
+               - NAME: serialVersionUID
+               - TYPE: long
+               - MODIFIERS: private static final
+               - VALUE: 8575799808933029326
 
 
 ======================================================
