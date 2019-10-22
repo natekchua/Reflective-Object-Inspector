@@ -1,7 +1,7 @@
 ======================================================
 Filename: script8.txt
 Running Test: Test String
-Recursive: false
+Recursive: true
 CLASS: String
    SUPERCLASS: Object
       CLASS: Object
@@ -667,20 +667,21 @@ CLASS: String
       - TYPE: char[]
       - MODIFIERS: private final
       - VALUE: 
+         ARRAY NAME: 
          COMPONENT TYPE: char
          ARRAY LENGTH: 11
          ARRAY CONTENTS: [
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
-            - VALUE: [C@2b193f2d
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
+            [C@60e53b93
          ]
    FIELD: 
       - NAME: hash
@@ -697,6 +698,7 @@ CLASS: String
       - TYPE: ObjectStreamField[]
       - MODIFIERS: private static final
       - VALUE: 
+         ARRAY NAME: 
          COMPONENT TYPE: ObjectStreamField
          ARRAY LENGTH: 0
          ARRAY CONTENTS: [
@@ -705,6 +707,113 @@ CLASS: String
       - NAME: CASE_INSENSITIVE_ORDER
       - TYPE: Comparator
       - MODIFIERS: public static final
-      REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@895328852
+      - VALUE: 
+         CLASS: Comparator
+            METHOD: 
+               - NAME: equals
+               - PARAMETER TYPES: 
+                  Object
+               - RETURN TYPE: boolean
+               - MODIFIERS: public abstract
+            METHOD: 
+               - NAME: compare
+               - PARAMETER TYPES: 
+                  Object
+                  Object
+               - RETURN TYPE: int
+               - MODIFIERS: public abstract
+            METHOD: 
+               - NAME: comparing
+               - PARAMETER TYPES: 
+                  Function
+                  Comparator
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: comparing
+               - PARAMETER TYPES: 
+                  Function
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: comparingDouble
+               - PARAMETER TYPES: 
+                  ToDoubleFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: comparingInt
+               - PARAMETER TYPES: 
+                  ToIntFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: comparingLong
+               - PARAMETER TYPES: 
+                  ToLongFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: naturalOrder
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: nullsFirst
+               - PARAMETER TYPES: 
+                  Comparator
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: nullsLast
+               - PARAMETER TYPES: 
+                  Comparator
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: reverseOrder
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public static
+            METHOD: 
+               - NAME: reversed
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparing
+               - PARAMETER TYPES: 
+                  Function
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparing
+               - PARAMETER TYPES: 
+                  Comparator
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparing
+               - PARAMETER TYPES: 
+                  Function
+                  Comparator
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparingDouble
+               - PARAMETER TYPES: 
+                  ToDoubleFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparingInt
+               - PARAMETER TYPES: 
+                  ToIntFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: thenComparingLong
+               - PARAMETER TYPES: 
+                  ToLongFunction
+               - RETURN TYPE: interface java.util.Comparator
+               - MODIFIERS: public
+
 
 ======================================================

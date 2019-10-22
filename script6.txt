@@ -1,7 +1,7 @@
 ======================================================
 Filename: script6.txt
-Running Test: [LClassB;@60e53b93
-Recursive: false
+Running Test: [LClassB;@7ea987ac
+Recursive: true
 CLASS: ClassB[]
    SUPERCLASS: Object
       CLASS: Object
@@ -113,5 +113,22 @@ CLASS: ClassB[]
       - NAME: notifyAll
       - RETURN TYPE: void
       - MODIFIERS: public final native
+   ARRAY NAME: 
+   COMPONENT TYPE: ClassB
+   ARRAY LENGTH: 12
+   ARRAY CONTENTS: [
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+      null
+   ]
 
 ======================================================

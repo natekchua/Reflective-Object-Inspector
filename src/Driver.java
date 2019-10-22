@@ -4,7 +4,7 @@ import java.io.*;
 public class Driver {
 
     public static void main(String[] args) throws Exception {
-        boolean rec = false;
+        boolean rec = true;
         if (args.length == 1) {
             rec = Boolean.parseBoolean(args[1]);
         }

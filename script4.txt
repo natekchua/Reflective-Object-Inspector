@@ -1,7 +1,7 @@
 ======================================================
 Filename: script4.txt
 Running Test: ClassD
-Recursive: false
+Recursive: true
 CLASS: ClassD
    SUPERCLASS: Object
       CLASS: Object
@@ -123,7 +123,162 @@ CLASS: ClassD
       - NAME: val
       - TYPE: ClassA
       - MODIFIERS: private
-      REFERENCE VALUE: ClassA@1627674070
+      - VALUE: 
+         CLASS: ClassA
+            SUPERCLASS: Object
+               CLASS: Object
+                  CONSTRUCTOR: 
+                     - NAME: java.lang.Object
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - PARAMETER TYPES: 
+                        long
+                        int
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final
+                  METHOD: 
+                     - NAME: wait
+                     - EXCEPTIONS THROWN: 
+                        InterruptedException
+                     - PARAMETER TYPES: 
+                        long
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: equals
+                     - PARAMETER TYPES: 
+                        Object
+                     - RETURN TYPE: boolean
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: toString
+                     - RETURN TYPE: class java.lang.String
+                     - MODIFIERS: public
+                  METHOD: 
+                     - NAME: hashCode
+                     - RETURN TYPE: int
+                     - MODIFIERS: public native
+                  METHOD: 
+                     - NAME: getClass
+                     - RETURN TYPE: class java.lang.Class
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: notify
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+                  METHOD: 
+                     - NAME: notifyAll
+                     - RETURN TYPE: void
+                     - MODIFIERS: public final native
+
+            INTERFACE: Serializable
+               CLASS: Serializable
+
+            INTERFACE: Runnable
+               CLASS: Runnable
+                  METHOD: 
+                     - NAME: run
+                     - RETURN TYPE: void
+                     - MODIFIERS: public abstract
+
+            CONSTRUCTOR: 
+               - NAME: ClassA
+               - MODIFIERS: public
+            CONSTRUCTOR: 
+               - NAME: ClassA
+               - PARAMETER TYPES: 
+                  int
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: run
+               - RETURN TYPE: void
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: toString
+               - RETURN TYPE: class java.lang.String
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: setVal
+               - EXCEPTIONS THROWN: 
+                  Exception
+               - PARAMETER TYPES: 
+                  int
+               - RETURN TYPE: void
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: getVal
+               - RETURN TYPE: int
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: wait
+               - EXCEPTIONS THROWN: 
+                  InterruptedException
+               - RETURN TYPE: void
+               - MODIFIERS: public final
+            METHOD: 
+               - NAME: wait
+               - EXCEPTIONS THROWN: 
+                  InterruptedException
+               - PARAMETER TYPES: 
+                  long
+                  int
+               - RETURN TYPE: void
+               - MODIFIERS: public final
+            METHOD: 
+               - NAME: wait
+               - EXCEPTIONS THROWN: 
+                  InterruptedException
+               - PARAMETER TYPES: 
+                  long
+               - RETURN TYPE: void
+               - MODIFIERS: public final native
+            METHOD: 
+               - NAME: equals
+               - PARAMETER TYPES: 
+                  Object
+               - RETURN TYPE: boolean
+               - MODIFIERS: public
+            METHOD: 
+               - NAME: hashCode
+               - RETURN TYPE: int
+               - MODIFIERS: public native
+            METHOD: 
+               - NAME: getClass
+               - RETURN TYPE: class java.lang.Class
+               - MODIFIERS: public final native
+            METHOD: 
+               - NAME: notify
+               - RETURN TYPE: void
+               - MODIFIERS: public final native
+            METHOD: 
+               - NAME: notifyAll
+               - RETURN TYPE: void
+               - MODIFIERS: public final native
+            FIELD: 
+               - NAME: val
+               - TYPE: int
+               - MODIFIERS: private
+               - VALUE: 17
+            FIELD: 
+               - NAME: val2
+               - TYPE: double
+               - MODIFIERS: private
+               - VALUE: 0.2
+            FIELD: 
+               - NAME: val3
+               - TYPE: boolean
+               - MODIFIERS: private
+               - VALUE: true
+
    FIELD: 
       - NAME: val2
       - TYPE: ClassA
@@ -139,6 +294,7 @@ CLASS: ClassD
       - TYPE: ClassA[]
       - MODIFIERS: private
       - VALUE: 
+         ARRAY NAME: 
          COMPONENT TYPE: ClassA
          ARRAY LENGTH: 10
          ARRAY CONTENTS: [

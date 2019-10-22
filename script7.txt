@@ -1,7 +1,7 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@266474c2
-Recursive: false
+Running Test: [[LClassB;@5cad8086
+Recursive: true
 CLASS: ClassB[][]
    SUPERCLASS: Object
       CLASS: Object
@@ -113,5 +113,226 @@ CLASS: ClassB[][]
       - NAME: notifyAll
       - RETURN TYPE: void
       - MODIFIERS: public final native
+   ARRAY NAME: 
+   COMPONENT TYPE: ClassB[]
+   ARRAY LENGTH: 12
+   ARRAY CONTENTS: [
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+      - VALUE: 
+         ARRAY NAME: 
+         COMPONENT TYPE: ClassB
+         ARRAY LENGTH: 12
+         ARRAY CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
+   ]
 
 ======================================================
