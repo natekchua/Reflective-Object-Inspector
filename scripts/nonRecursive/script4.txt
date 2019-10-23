@@ -1,8 +1,8 @@
 ======================================================
-Filename: script1.txt
-Running Test: ClassA
-Recursive: true
-CLASS: ClassA
+Filename: script4.txt
+Running Test: ClassD
+Recursive: false
+CLASS: ClassD
    SUPERCLASS: Object
       CLASS: Object
          CONSTRUCTOR: 
@@ -73,63 +73,58 @@ CLASS: ClassA
             - NAME: registerNatives
             - RETURN TYPE: void
             - MODIFIERS: private static native
-
-   INTERFACE: Serializable
-      CLASS: Serializable
-
-   INTERFACE: Runnable
-      CLASS: Runnable
-         METHOD: 
-            - NAME: run
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
+         ** NO FIELD EXISTS **
 
    CONSTRUCTOR: 
-      - NAME: ClassA
+      - NAME: ClassD
       - MODIFIERS: public
    CONSTRUCTOR: 
-      - NAME: ClassA
+      - NAME: ClassD
       - PARAMETER TYPES: 
          int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: run
-      - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
       - NAME: toString
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
-      - NAME: setVal
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: printSomething
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
-      - NAME: getVal
+      - NAME: getVal3
       - RETURN TYPE: int
       - MODIFIERS: public
    FIELD: 
       - NAME: val
-      - TYPE: int
+      - TYPE: ClassA
       - MODIFIERS: private
-      - VALUE: 3
+      - REFERENCE VALUE: ClassA@1627674070
    FIELD: 
       - NAME: val2
-      - TYPE: double
-      - MODIFIERS: private
-      - VALUE: 0.2
+      - TYPE: ClassA
+      - MODIFIERS: private static
+         null
    FIELD: 
       - NAME: val3
-      - TYPE: boolean
+      - TYPE: int
       - MODIFIERS: private
-      - VALUE: true
+         - VALUE: 32
+   FIELD: 
+      - NAME: vallarray
+      - TYPE: ClassA[]
+      - MODIFIERS: private
+      - VALUE: 
+         ARRAY: 
+            COMPONENT TYPE: ClassA
+            LENGTH: 10
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+            ]
 
 ======================================================

@@ -1,8 +1,8 @@
 ======================================================
-Filename: script6.txt
-Running Test: [LClassB;@7ea987ac
-Recursive: true
-CLASS: ClassB[]
+Filename: script1.txt
+Running Test: ClassA
+Recursive: false
+CLASS: ClassA
    SUPERCLASS: Object
       CLASS: Object
          CONSTRUCTOR: 
@@ -73,29 +73,68 @@ CLASS: ClassB[]
             - NAME: registerNatives
             - RETURN TYPE: void
             - MODIFIERS: private static native
-
-   INTERFACE: Cloneable
-      CLASS: Cloneable
+         ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
       CLASS: Serializable
+         ** NO SUPERCLASS EXISTS **
+         ** NO FIELD EXISTS **
 
-   ARRAY: 
-   COMPONENT TYPE: ClassB
-   ARRAY LENGTH: 12
-   ARRAY CONTENTS: [
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-      null
-   ]
+   INTERFACE: Runnable
+      CLASS: Runnable
+         ** NO SUPERCLASS EXISTS **
+         METHOD: 
+            - NAME: run
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
+         ** NO FIELD EXISTS **
+
+   CONSTRUCTOR: 
+      - NAME: ClassA
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: ClassA
+      - PARAMETER TYPES: 
+         int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: run
+      - RETURN TYPE: void
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toString
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: setVal
+      - EXCEPTIONS THROWN: 
+         Exception
+      - PARAMETER TYPES: 
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: getVal
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - RETURN TYPE: void
+      - MODIFIERS: private
+   FIELD: 
+      - NAME: val
+      - TYPE: int
+      - MODIFIERS: private
+         - VALUE: 3
+   FIELD: 
+      - NAME: val2
+      - TYPE: double
+      - MODIFIERS: private
+         - VALUE: 0.2
+   FIELD: 
+      - NAME: val3
+      - TYPE: boolean
+      - MODIFIERS: private
+         - VALUE: true
 
 ======================================================

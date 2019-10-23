@@ -4,7 +4,7 @@ import java.io.*;
 public class Driver {
 
     public static void main(String[] args) throws Exception {
-        boolean rec = true;
+        boolean rec = false;
         if (args.length == 1) {
             rec = Boolean.parseBoolean(args[1]);
         }
@@ -21,7 +21,12 @@ public class Driver {
     public static void runTest(String filename, Object testObj, boolean recursive) {
         try {
             PrintStream old = System.out;
-            File file = new File(filename);
+
+            File directory = new File("scripts" + (recursive ? "/recursive" : "/nonRecursive")); //categorize scripts
+            if(!directory.exists())
+                directory.mkdir();
+
+            File file = new File(directory.getAbsolutePath() + "/" + filename);
             FileOutputStream fos = new FileOutputStream(file);
             PrintStream ps = new PrintStream(fos);
             System.setOut(ps);

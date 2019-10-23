@@ -1,8 +1,25 @@
 ======================================================
-Filename: script2.txt
-Running Test: ClassA
+Filename: script6.txt
+Running Test: [LClassB;@7ea987ac
 Recursive: true
-CLASS: ClassA
+CLASS: ClassB[]
+   ARRAY: 
+   COMPONENT TYPE: ClassB
+   ARRAY LENGTH: 12
+   ARRAY CONTENTS: [
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+         - VALUE: null
+   ]
    SUPERCLASS: Object
       CLASS: Object
          CONSTRUCTOR: 
@@ -73,63 +90,18 @@ CLASS: ClassA
             - NAME: registerNatives
             - RETURN TYPE: void
             - MODIFIERS: private static native
+         ** NO FIELD EXISTS **
+
+   INTERFACE: Cloneable
+      CLASS: Cloneable
+         ** NO SUPERCLASS EXISTS **
+         ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
       CLASS: Serializable
+         ** NO SUPERCLASS EXISTS **
+         ** NO FIELD EXISTS **
 
-   INTERFACE: Runnable
-      CLASS: Runnable
-         METHOD: 
-            - NAME: run
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
-
-   CONSTRUCTOR: 
-      - NAME: ClassA
-      - MODIFIERS: public
-   CONSTRUCTOR: 
-      - NAME: ClassA
-      - PARAMETER TYPES: 
-         int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: run
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: toString
-      - RETURN TYPE: class java.lang.String
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: setVal
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: printSomething
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
-      - NAME: getVal
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   FIELD: 
-      - NAME: val
-      - TYPE: int
-      - MODIFIERS: private
-      - VALUE: 12
-   FIELD: 
-      - NAME: val2
-      - TYPE: double
-      - MODIFIERS: private
-      - VALUE: 0.2
-   FIELD: 
-      - NAME: val3
-      - TYPE: boolean
-      - MODIFIERS: private
-      - VALUE: true
+   ** NO FIELD EXISTS **
 
 ======================================================
