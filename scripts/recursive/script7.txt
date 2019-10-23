@@ -1,229 +1,229 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@5cad8086
+Running Test: [[LClassB;@511d50c0
 Recursive: true
 CLASS: ClassB[][]
    ARRAY: 
-   COMPONENT TYPE: ClassB[]
-   ARRAY LENGTH: 12
-   ARRAY CONTENTS: [
-         - VALUE: 
-            ARRAY: 
+      COMPONENT TYPE: ClassB[]
+      LENGTH: 12
+      CONTENTS: [
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-         - VALUE: 
-            ARRAY: 
+      - VALUE: 
+         ARRAY: 
             COMPONENT TYPE: ClassB
-            ARRAY LENGTH: 12
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
+            LENGTH: 12
+            CONTENTS: [
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
+               null
             ]
-   ]
+      ]
    SUPERCLASS: Object
       CLASS: Object
          CONSTRUCTOR: 

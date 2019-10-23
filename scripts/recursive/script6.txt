@@ -1,25 +1,25 @@
 ======================================================
 Filename: script6.txt
-Running Test: [LClassB;@7ea987ac
+Running Test: [LClassB;@6e0be858
 Recursive: true
 CLASS: ClassB[]
    ARRAY: 
-   COMPONENT TYPE: ClassB
-   ARRAY LENGTH: 12
-   ARRAY CONTENTS: [
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-         - VALUE: null
-   ]
+      COMPONENT TYPE: ClassB
+      LENGTH: 12
+      CONTENTS: [
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+         null
+      ]
    SUPERCLASS: Object
       CLASS: Object
          CONSTRUCTOR: 

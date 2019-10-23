@@ -30,12 +30,13 @@ public class Inspector {
     /*
     method to inspect declaring class.
     */
-    private void inspectClass(Class c, Object obj, boolean recursive, int depth) {
-
+    public void inspectClass(Class c, Object obj, boolean recursive, int depth) {
         format(depth,"CLASS: " + c.getSimpleName());
 
-        if(c.isArray())
+        if(c.isArray()){
             inspectArray(c, obj, recursive, depth);
+            return;
+        }
 
         inspectSuperclass(c, obj, recursive, depth);
         inspectInterfaces(c, obj, recursive, depth);
@@ -49,7 +50,7 @@ public class Inspector {
     /*
     method to inspect superclass: always fully explores inheritance hierarchy.
     */
-    private void inspectSuperclass(Class c, Object obj, boolean recursive, int depth) {
+    public void inspectSuperclass(Class c, Object obj, boolean recursive, int depth) {
         if(c.equals(Object.class))
             return;
 
@@ -66,7 +67,7 @@ public class Inspector {
     /*
     method to inspect implemented interface(s): always fully explores inheritance hierarchy.
     */
-    private void inspectInterfaces(Class c, Object obj, boolean recursive, int depth) {
+    public void inspectInterfaces(Class c, Object obj, boolean recursive, int depth) {
         Class [] iArray = c.getInterfaces();         //array of class c's implementing interfaces
         int indents = depth + 1;
 
@@ -79,7 +80,7 @@ public class Inspector {
     /*
     method to inspect constructors: prints constructor name, parameters (if any), and modifiers.
      */
-    private void inspectConstructors(Class c, int depth) {
+    public void inspectConstructors(Class c, int depth) {
         Constructor[] cArray = c.getConstructors();                 //array of class c's constructors
         int indents = depth + 1;
 
@@ -88,12 +89,11 @@ public class Inspector {
                 format(indents, "CONSTRUCTOR: ");
                 format(indents + 1,"- NAME: " + constructor.getName());
 
-                Class[] pArray = constructor.getParameterTypes();   //array of constructor parameter types
-                if (pArray.length > 0) {                             //check that at least one parameter exists
-                    format(indents + 1, "- PARAMETER TYPES: ");
-                    printTypes(indents + 2, pArray);
-                }
-                format(indents + 1,"- MODIFIERS: " + Modifier.toString(constructor.getModifiers()));
+                Class[] params = constructor.getParameterTypes();   //array of constructor parameter types
+                printParameters(indents, params);
+
+                int modifiers = constructor.getModifiers();
+                format(indents + 1, modifiers > 0 ? "- MODIFIERS: " + Modifier.toString(modifiers) : "- MODIFIERS: NONE");
             }
         }
     }
@@ -101,7 +101,7 @@ public class Inspector {
     /*
     method to inspect methods: prints method name, exceptions (if any), parameters (if any), return type, and modifiers.
      */
-    private void inspectMethods(Class c, int depth) {
+    public void inspectMethods(Class c, int depth) {
         Method[] methods = c.getDeclaredMethods();                             //gets all methods of any visibility in Class "c"
         int indents = depth + 1;
 
@@ -110,20 +110,17 @@ public class Inspector {
                 format(indents,"METHOD: ");
                 format(indents + 1, "- NAME: " + method.getName());
 
-                Class[] eArray = method.getExceptionTypes();            //array of the method's exception types
-                if(eArray.length > 0) {                                 //check that there is at least one exception
-                    format(indents + 1, "- EXCEPTIONS THROWN: ");
-                    printTypes(indents + 2, eArray);
-                }
+                Class[] exceptions = method.getExceptionTypes();            //array of the method's exception types
+                printExceptions(indents, exceptions);
 
-                Class[] pArray = method.getParameterTypes();            //array of method's parameter types
-                if(pArray.length > 0){                                  //check that there is at least one parameter
-                    format(indents + 1, "- PARAMETER TYPES: ");
-                    printTypes(indents + 2, pArray);
-                }
+                Class[] params = method.getParameterTypes();            //array of method's parameter types
+                printParameters(indents, params);
+
 
                 format(indents + 1, "- RETURN TYPE: " + method.getReturnType());
-                format(indents + 1, "- MODIFIERS: " + Modifier.toString(method.getModifiers()));
+
+                int modifiers = method.getModifiers();
+                format(indents + 1, modifiers > 0 ? "- MODIFIERS: " + Modifier.toString(modifiers) : "- MODIFIERS: NONE");
             }
         }
     }
@@ -133,7 +130,7 @@ public class Inspector {
     this method can be enabled for recursive introspection; if recursive is true, then field will be
     inspected in the same manner as an object.
     */
-    private void inspectFields(Class c, Object obj, boolean recursive, int depth) {
+    public void inspectFields(Class c, Object obj, boolean recursive, int depth) {
         Field[] fields = c.getDeclaredFields();
         int indents = depth + 1;
 
@@ -145,11 +142,13 @@ public class Inspector {
                 format(indents, "FIELD: ");
                 format(indents + 1, "- NAME: " + field.getName());
                 format(indents + 1, "- TYPE: " + type.getSimpleName());
-                format(indents + 1, "- MODIFIERS: " + Modifier.toString(field.getModifiers()));
+
+                int modifiers = field.getModifiers();
+                format(indents + 1, modifiers > 0 ? "- MODIFIERS: " + Modifier.toString(modifiers) : "- MODIFIERS: NONE");
 
                 try{
                     Object val = field.get(obj);
-                    getValue(val, type, recursive, indents);
+                    getValue(val, type, recursive, depth);
                 }
                 catch(IllegalAccessException e){
                     e.printStackTrace();
@@ -182,7 +181,10 @@ public class Inspector {
         format(indents + 1, "]");
     }
 
-    private void getValue(Object obj, Class value, boolean recursive, int depth) {
+    /*
+    method to determine the type of a value from a field or array.
+     */
+    public void getValue(Object obj, Class value, boolean recursive, int depth) {
         int indents = depth + 1;
         if(obj == null)                                     //if element at arr[i] is null
             format(indents + 1, "null");
@@ -195,23 +197,46 @@ public class Inspector {
             recursiveIntrospection(obj, recursive, depth);
     }
     /*
-    helper method used for further field (including arrays) introspection.
+    helper method used for recursiveIntrospection().
     if recursive is false, information is simply found of for the field, otherwise
     we further inspect the field/array in the same manner of a regular object.
      */
     private void recursiveIntrospection(Object obj, boolean recursive, int depth) {
         int indents = depth + 1;
         if (!recursive) {
-            format(indents, "- REFERENCE VALUE: " + obj.getClass().getName() + "@" + System.identityHashCode(obj));
+            format(indents, "- REFERENCE VALUE: " + obj.getClass().getName() + "@" + Integer.toHexString(System.identityHashCode(obj)));
         } else {
             inspectClass(obj.getClass(), obj, recursive, depth);
         }
     }
 
     /*
+    helper method to print out parameter types.
+     */
+    private void printParameters(int indents, Class[] pArray) {
+        if(pArray.length > 0){                                  //check that there is at least one parameter
+            format(indents + 1, "- PARAMETER TYPES: ");
+            printTypes(indents + 2, pArray);
+        }
+        else
+            format(indents + 1, "- PARAMETER TYPES: NONE");
+    }
+
+    /*
+    helper method to print out exception types.
+     */
+    private void printExceptions(int indents, Class[] eArray) {
+        if(eArray.length > 0) {                                 //check that there is at least one exception
+            format(indents + 1, "- EXCEPTIONS THROWN: ");
+            printTypes(indents + 2, eArray);
+        }
+        else
+            format(indents + 1, "- EXCEPTIONS THROWN: NONE");
+    }
+    /*
     Helper method to handle parameter and exception types array traversal and printing out each element.
      */
-    private void printTypes(int indents, Class[] typeArray) {
+    public void printTypes(int indents, Class[] typeArray) {
         for(Class type : typeArray)
             format(indents, type.getSimpleName());
     }

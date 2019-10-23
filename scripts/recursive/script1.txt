@@ -114,27 +114,27 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: getVal
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
       - NAME: printSomething
       - RETURN TYPE: void
       - MODIFIERS: private
-FIELD: 
-   - NAME: val
-   - TYPE: int
-   - MODIFIERS: private
-         - VALUE: 3
-FIELD: 
-   - NAME: val2
-   - TYPE: double
-   - MODIFIERS: private
-         - VALUE: 0.2
-FIELD: 
-   - NAME: val3
-   - TYPE: boolean
-   - MODIFIERS: private
-         - VALUE: true
+   METHOD: 
+      - NAME: getVal
+      - RETURN TYPE: int
+      - MODIFIERS: public
+   FIELD: 
+      - NAME: val
+      - TYPE: int
+      - MODIFIERS: private
+      - VALUE: 3
+   FIELD: 
+      - NAME: val2
+      - TYPE: double
+      - MODIFIERS: private
+      - VALUE: 0.2
+   FIELD: 
+      - NAME: val3
+      - TYPE: boolean
+      - MODIFIERS: private
+      - VALUE: true
 
 ======================================================

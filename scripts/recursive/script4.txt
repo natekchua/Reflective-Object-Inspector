@@ -91,174 +91,174 @@ CLASS: ClassD
       - NAME: getVal3
       - RETURN TYPE: int
       - MODIFIERS: public
-FIELD: 
-   - NAME: val
-   - TYPE: ClassA
-   - MODIFIERS: private
-   CLASS: ClassA
-      SUPERCLASS: Object
-         CLASS: Object
-            CONSTRUCTOR: 
-               - NAME: java.lang.Object
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: finalize
-               - EXCEPTIONS THROWN: 
-                  Throwable
-               - RETURN TYPE: void
-               - MODIFIERS: protected
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-                  int
-               - RETURN TYPE: void
-               - MODIFIERS: public final
-            METHOD: 
-               - NAME: wait
-               - EXCEPTIONS THROWN: 
-                  InterruptedException
-               - PARAMETER TYPES: 
-                  long
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: equals
-               - PARAMETER TYPES: 
-                  Object
-               - RETURN TYPE: boolean
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: toString
-               - RETURN TYPE: class java.lang.String
-               - MODIFIERS: public
-            METHOD: 
-               - NAME: hashCode
-               - RETURN TYPE: int
-               - MODIFIERS: public native
-            METHOD: 
-               - NAME: getClass
-               - RETURN TYPE: class java.lang.Class
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: clone
-               - EXCEPTIONS THROWN: 
-                  CloneNotSupportedException
-               - RETURN TYPE: class java.lang.Object
-               - MODIFIERS: protected native
-            METHOD: 
-               - NAME: notify
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: notifyAll
-               - RETURN TYPE: void
-               - MODIFIERS: public final native
-            METHOD: 
-               - NAME: registerNatives
-               - RETURN TYPE: void
-               - MODIFIERS: private static native
-            ** NO FIELD EXISTS **
+   FIELD: 
+      - NAME: val
+      - TYPE: ClassA
+      - MODIFIERS: private
+CLASS: ClassA
+   SUPERCLASS: Object
+      CLASS: Object
+         CONSTRUCTOR: 
+            - NAME: java.lang.Object
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: finalize
+            - EXCEPTIONS THROWN: 
+               Throwable
+            - RETURN TYPE: void
+            - MODIFIERS: protected
+         METHOD: 
+            - NAME: wait
+            - EXCEPTIONS THROWN: 
+               InterruptedException
+            - RETURN TYPE: void
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
+            - EXCEPTIONS THROWN: 
+               InterruptedException
+            - PARAMETER TYPES: 
+               long
+               int
+            - RETURN TYPE: void
+            - MODIFIERS: public final
+         METHOD: 
+            - NAME: wait
+            - EXCEPTIONS THROWN: 
+               InterruptedException
+            - PARAMETER TYPES: 
+               long
+            - RETURN TYPE: void
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: equals
+            - PARAMETER TYPES: 
+               Object
+            - RETURN TYPE: boolean
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: toString
+            - RETURN TYPE: class java.lang.String
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: hashCode
+            - RETURN TYPE: int
+            - MODIFIERS: public native
+         METHOD: 
+            - NAME: getClass
+            - RETURN TYPE: class java.lang.Class
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: clone
+            - EXCEPTIONS THROWN: 
+               CloneNotSupportedException
+            - RETURN TYPE: class java.lang.Object
+            - MODIFIERS: protected native
+         METHOD: 
+            - NAME: notify
+            - RETURN TYPE: void
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: notifyAll
+            - RETURN TYPE: void
+            - MODIFIERS: public final native
+         METHOD: 
+            - NAME: registerNatives
+            - RETURN TYPE: void
+            - MODIFIERS: private static native
+         ** NO FIELD EXISTS **
 
-      INTERFACE: Serializable
-         CLASS: Serializable
-            ** NO SUPERCLASS EXISTS **
-            ** NO FIELD EXISTS **
+   INTERFACE: Serializable
+      CLASS: Serializable
+         ** NO SUPERCLASS EXISTS **
+         ** NO FIELD EXISTS **
 
-      INTERFACE: Runnable
-         CLASS: Runnable
-            ** NO SUPERCLASS EXISTS **
-            METHOD: 
-               - NAME: run
-               - RETURN TYPE: void
-               - MODIFIERS: public abstract
-            ** NO FIELD EXISTS **
+   INTERFACE: Runnable
+      CLASS: Runnable
+         ** NO SUPERCLASS EXISTS **
+         METHOD: 
+            - NAME: run
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
+         ** NO FIELD EXISTS **
 
-      CONSTRUCTOR: 
-         - NAME: ClassA
-         - MODIFIERS: public
-      CONSTRUCTOR: 
-         - NAME: ClassA
-         - PARAMETER TYPES: 
-            int
-         - MODIFIERS: public
-      METHOD: 
-         - NAME: run
-         - RETURN TYPE: void
-         - MODIFIERS: public
-      METHOD: 
-         - NAME: toString
-         - RETURN TYPE: class java.lang.String
-         - MODIFIERS: public
-      METHOD: 
-         - NAME: setVal
-         - EXCEPTIONS THROWN: 
-            Exception
-         - PARAMETER TYPES: 
-            int
-         - RETURN TYPE: void
-         - MODIFIERS: public
-      METHOD: 
-         - NAME: getVal
-         - RETURN TYPE: int
-         - MODIFIERS: public
-      METHOD: 
-         - NAME: printSomething
-         - RETURN TYPE: void
-         - MODIFIERS: private
+   CONSTRUCTOR: 
+      - NAME: ClassA
+      - MODIFIERS: public
+   CONSTRUCTOR: 
+      - NAME: ClassA
+      - PARAMETER TYPES: 
+         int
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: run
+      - RETURN TYPE: void
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: toString
+      - RETURN TYPE: class java.lang.String
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: setVal
+      - EXCEPTIONS THROWN: 
+         Exception
+      - PARAMETER TYPES: 
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - RETURN TYPE: void
+      - MODIFIERS: private
+   METHOD: 
+      - NAME: getVal
+      - RETURN TYPE: int
+      - MODIFIERS: public
    FIELD: 
       - NAME: val
       - TYPE: int
       - MODIFIERS: private
-            - VALUE: 17
+      - VALUE: 17
    FIELD: 
       - NAME: val2
       - TYPE: double
       - MODIFIERS: private
-            - VALUE: 0.2
+      - VALUE: 0.2
    FIELD: 
       - NAME: val3
       - TYPE: boolean
       - MODIFIERS: private
-            - VALUE: true
+      - VALUE: true
 
-FIELD: 
-   - NAME: val2
-   - TYPE: ClassA
-   - MODIFIERS: private static
-         - VALUE: null
-FIELD: 
-   - NAME: val3
-   - TYPE: int
-   - MODIFIERS: private
-         - VALUE: 32
-FIELD: 
-   - NAME: vallarray
-   - TYPE: ClassA[]
-   - MODIFIERS: private
-         - VALUE: 
-            ARRAY: 
-            COMPONENT TYPE: ClassA
-            ARRAY LENGTH: 10
-            ARRAY CONTENTS: [
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-                  - VALUE: null
-            ]
+   FIELD: 
+      - NAME: val2
+      - TYPE: ClassA
+      - MODIFIERS: private static
+      null
+   FIELD: 
+      - NAME: val3
+      - TYPE: int
+      - MODIFIERS: private
+      - VALUE: 32
+   FIELD: 
+      - NAME: vallarray
+      - TYPE: ClassA[]
+      - MODIFIERS: private
+   - VALUE: 
+      ARRAY: 
+         COMPONENT TYPE: ClassA
+         LENGTH: 10
+         CONTENTS: [
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+            null
+         ]
 
 ======================================================
