@@ -5,19 +5,23 @@ Recursive: true
 CLASS: String
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          METHOD: 
             - NAME: finalize
             - EXCEPTIONS THROWN: 
                Throwable
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
                InterruptedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final
          METHOD: 
@@ -39,77 +43,90 @@ CLASS: String
             - MODIFIERS: public final native
          METHOD: 
             - NAME: equals
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: boolean
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
             - NAME: hashCode
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public native
          METHOD: 
             - NAME: getClass
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
             - NAME: clone
             - EXCEPTIONS THROWN: 
                CloneNotSupportedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Object
             - MODIFIERS: protected native
          METHOD: 
             - NAME: notify
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: notifyAll
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
-      CLASS: Serializable
-         ** NO SUPERCLASS EXISTS **
          ** NO FIELD EXISTS **
-
    INTERFACE: Comparable
-      CLASS: Comparable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: compareTo
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: int
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    INTERFACE: CharSequence
-      CLASS: CharSequence
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: charAt
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                int
             - RETURN TYPE: char
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: length
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: subSequence
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                int
                int
@@ -117,22 +134,29 @@ CLASS: String
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: chars
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.stream.IntStream
             - MODIFIERS: public
          METHOD: 
             - NAME: codePoints
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.stream.IntStream
             - MODIFIERS: public
          METHOD: 
             - NAME: lambda$chars$0
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.Spliterator$OfInt
             - MODIFIERS: private
          METHOD: 
             - NAME: lambda$codePoints$1
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.Spliterator$OfInt
             - MODIFIERS: private
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: java.lang.String
       - PARAMETER TYPES: 
@@ -192,6 +216,7 @@ CLASS: String
       - MODIFIERS: public
    CONSTRUCTOR: 
       - NAME: java.lang.String
+      - PARAMETER TYPES: NONE
       - MODIFIERS: public
    CONSTRUCTOR: 
       - NAME: java.lang.String
@@ -226,32 +251,40 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: equals
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Object
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: toString
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: hashCode
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: compareTo
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: compareTo
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Object
       - RETURN TYPE: int
       - MODIFIERS: public volatile
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          int
@@ -259,12 +292,14 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -272,12 +307,14 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -290,6 +327,7 @@ CLASS: String
       - MODIFIERS: static
    METHOD: 
       - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -300,36 +338,42 @@ CLASS: String
       - MODIFIERS: static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          long
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          float
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          boolean
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -338,30 +382,35 @@ CLASS: String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Object
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: valueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          double
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: charAt
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: char
       - MODIFIERS: public
    METHOD: 
       - NAME: checkBounds
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          byte[]
          int
@@ -370,18 +419,21 @@ CLASS: String
       - MODIFIERS: private static
    METHOD: 
       - NAME: codePointAt
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: codePointBefore
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: codePointCount
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -389,42 +441,49 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: compareToIgnoreCase
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: concat
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: contains
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          CharSequence
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: contentEquals
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          CharSequence
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: contentEquals
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          StringBuffer
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: copyValueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public static
    METHOD: 
       - NAME: copyValueOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -433,18 +492,21 @@ CLASS: String
       - MODIFIERS: public static
    METHOD: 
       - NAME: endsWith
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: equalsIgnoreCase
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: format
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Locale
          String
@@ -453,6 +515,7 @@ CLASS: String
       - MODIFIERS: public static transient
    METHOD: 
       - NAME: format
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          Object[]
@@ -460,6 +523,7 @@ CLASS: String
       - MODIFIERS: public static transient
    METHOD: 
       - NAME: getBytes
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -469,6 +533,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: getBytes
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Charset
       - RETURN TYPE: class [B
@@ -483,10 +548,13 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: getBytes
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class [B
       - MODIFIERS: public
    METHOD: 
       - NAME: getChars
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -496,13 +564,15 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: getChars
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
       - RETURN TYPE: void
-      - MODIFIERS: 
+      - MODIFIERS: NONE
    METHOD: 
       - NAME: indexOfSupplementary
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -510,14 +580,19 @@ CLASS: String
       - MODIFIERS: private
    METHOD: 
       - NAME: intern
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public native
    METHOD: 
       - NAME: isEmpty
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: join
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          CharSequence
          CharSequence[]
@@ -525,6 +600,7 @@ CLASS: String
       - MODIFIERS: public static transient
    METHOD: 
       - NAME: join
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          CharSequence
          Iterable
@@ -532,18 +608,21 @@ CLASS: String
       - MODIFIERS: public static
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -554,6 +633,7 @@ CLASS: String
       - MODIFIERS: static
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          int
@@ -561,6 +641,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -568,6 +649,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char[]
          int
@@ -580,6 +662,7 @@ CLASS: String
       - MODIFIERS: static
    METHOD: 
       - NAME: lastIndexOfSupplementary
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -587,22 +670,27 @@ CLASS: String
       - MODIFIERS: private
    METHOD: 
       - NAME: length
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
       - NAME: matches
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: nonSyncContentEquals
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          AbstractStringBuilder
       - RETURN TYPE: boolean
       - MODIFIERS: private
    METHOD: 
       - NAME: offsetByCodePoints
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -610,6 +698,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: regionMatches
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          String
@@ -619,6 +708,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: regionMatches
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          boolean
          int
@@ -629,6 +719,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: replace
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          char
          char
@@ -636,6 +727,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: replace
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          CharSequence
          CharSequence
@@ -643,6 +735,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: replaceAll
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          String
@@ -650,6 +743,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: replaceFirst
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          String
@@ -657,12 +751,14 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: split
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: class [Ljava.lang.String;
       - MODIFIERS: public
    METHOD: 
       - NAME: split
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          int
@@ -670,6 +766,7 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: startsWith
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          int
@@ -677,12 +774,14 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: startsWith
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
    METHOD: 
       - NAME: subSequence
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -690,12 +789,14 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: substring
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: substring
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
          int
@@ -703,30 +804,40 @@ CLASS: String
       - MODIFIERS: public
    METHOD: 
       - NAME: toCharArray
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class [C
       - MODIFIERS: public
    METHOD: 
       - NAME: toLowerCase
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Locale
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: toLowerCase
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: toUpperCase
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: toUpperCase
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Locale
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: trim
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    FIELD: 
@@ -777,19 +888,23 @@ CLASS: String
 CLASS: CaseInsensitiveComparator
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          METHOD: 
             - NAME: finalize
             - EXCEPTIONS THROWN: 
                Throwable
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
                InterruptedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final
          METHOD: 
@@ -811,53 +926,67 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: public final native
          METHOD: 
             - NAME: equals
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: boolean
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
             - NAME: hashCode
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public native
          METHOD: 
             - NAME: getClass
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
             - NAME: clone
             - EXCEPTIONS THROWN: 
                CloneNotSupportedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Object
             - MODIFIERS: protected native
          METHOD: 
             - NAME: notify
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: notifyAll
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
    INTERFACE: Comparator
-      CLASS: Comparator
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: equals
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: boolean
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: compare
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
                Object
@@ -865,12 +994,14 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: public abstract
          METHOD: 
             - NAME: $deserializeLambda$
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                SerializedLambda
             - RETURN TYPE: class java.lang.Object
             - MODIFIERS: private static
          METHOD: 
             - NAME: comparing
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Function
                Comparator
@@ -878,30 +1009,35 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: comparing
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Function
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: comparingDouble
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToDoubleFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: comparingInt
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToIntFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: comparingLong
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToLongFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: lambda$comparing$77a9974f$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Function
                Object
@@ -910,6 +1046,7 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private static
          METHOD: 
             - NAME: lambda$comparing$ea9a8b3a$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Comparator
                Function
@@ -919,6 +1056,7 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private static
          METHOD: 
             - NAME: lambda$comparingDouble$8dcf42ea$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToDoubleFunction
                Object
@@ -927,6 +1065,7 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private static
          METHOD: 
             - NAME: lambda$comparingInt$7b0bb60$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToIntFunction
                Object
@@ -935,6 +1074,7 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private static
          METHOD: 
             - NAME: lambda$comparingLong$6043328a$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToLongFunction
                Object
@@ -943,6 +1083,7 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private static
          METHOD: 
             - NAME: lambda$thenComparing$36697e65$1
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Comparator
                Object
@@ -951,42 +1092,53 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: private
          METHOD: 
             - NAME: naturalOrder
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: nullsFirst
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Comparator
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: nullsLast
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Comparator
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: reverseOrder
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public static
          METHOD: 
             - NAME: reversed
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparing
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Function
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparing
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Comparator
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparing
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Function
                Comparator
@@ -994,31 +1146,31 @@ CLASS: CaseInsensitiveComparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparingDouble
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToDoubleFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparingInt
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToIntFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          METHOD: 
             - NAME: thenComparingLong
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                ToLongFunction
             - RETURN TYPE: interface java.util.Comparator
             - MODIFIERS: public
          ** NO FIELD EXISTS **
-
    INTERFACE: Serializable
-      CLASS: Serializable
-         ** NO SUPERCLASS EXISTS **
          ** NO FIELD EXISTS **
-
    METHOD: 
       - NAME: compare
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          Object
          Object
@@ -1026,6 +1178,7 @@ CLASS: CaseInsensitiveComparator
       - MODIFIERS: public volatile
    METHOD: 
       - NAME: compare
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          String
          String
@@ -1033,6 +1186,8 @@ CLASS: CaseInsensitiveComparator
       - MODIFIERS: public
    METHOD: 
       - NAME: readResolve
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.Object
       - MODIFIERS: private
    FIELD: 

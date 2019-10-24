@@ -37,14 +37,24 @@ public class TestInspector {
     @Test
     public void testSuperclassDoesntExist(){
         new Inspector().inspectSuperclass(Serializable.class, null, false, 0 );
+       if(!Serializable.class.isInterface()){
         String expected = "** NO SUPERCLASS EXISTS **";
         assert(output.toString().contains(expected));
+       }
     }
 
     @Test
     public void testInterface(){
         new Inspector().inspectInterfaces(String.class, "Hello World", false, 0);
         String expected = "INTERFACE: Serializable";
+        assert(output.toString().contains(expected));
+    }
+
+    @Test
+    public void testInterfaceDoesntExist(){
+        TesterClass test = new TesterClass();
+        new Inspector().inspectInterfaces(test.getClass(), new TesterClass(), false, 0);
+        String expected = "** NO INTERFACE IMPLEMENTED **";
         assert(output.toString().contains(expected));
     }
 
@@ -76,7 +86,7 @@ public class TestInspector {
     }
 
     @Test
-    public void testMethodIntrospection(){
+    public void testMethodInspection(){
         new Inspector().inspectMethods(String.class, 0);
 
         String expected = "- NAME: isEmpty";
@@ -89,7 +99,7 @@ public class TestInspector {
         assert(output.toString().contains(expected));
     }
     @Test
-    public void testFieldIntrospection(){
+    public void testFieldInspection(){
         new Inspector().inspectFields(String.class, "Hey There", false, 0);
 
         String expected = "- NAME: hash";
@@ -112,7 +122,7 @@ public class TestInspector {
     }
 
     @Test
-    public void testArrayIntrospection(){
+    public void testArrayInspection(){
         new Inspector().inspect(new ClassB[6], false);
 
         String expected = "COMPONENT TYPE: ClassB";

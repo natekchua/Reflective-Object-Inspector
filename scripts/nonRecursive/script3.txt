@@ -9,10 +9,18 @@ CLASS: ClassB
             CLASS: ClassD
                SUPERCLASS: Object
                   CLASS: Object
+                     ** NO INTERFACE IMPLEMENTED **
                      CONSTRUCTOR: 
                         - NAME: java.lang.Object
                         - PARAMETER TYPES: NONE
                         - MODIFIERS: public
+                     METHOD: 
+                        - NAME: finalize
+                        - EXCEPTIONS THROWN: 
+                           Throwable
+                        - PARAMETER TYPES: NONE
+                        - RETURN TYPE: void
+                        - MODIFIERS: protected
                      METHOD: 
                         - NAME: wait
                         - EXCEPTIONS THROWN: 
@@ -63,6 +71,13 @@ CLASS: ClassB
                         - RETURN TYPE: class java.lang.Class
                         - MODIFIERS: public final native
                      METHOD: 
+                        - NAME: clone
+                        - EXCEPTIONS THROWN: 
+                           CloneNotSupportedException
+                        - PARAMETER TYPES: NONE
+                        - RETURN TYPE: class java.lang.Object
+                        - MODIFIERS: protected native
+                     METHOD: 
                         - NAME: notify
                         - EXCEPTIONS THROWN: NONE
                         - PARAMETER TYPES: NONE
@@ -74,8 +89,15 @@ CLASS: ClassB
                         - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
+                     METHOD: 
+                        - NAME: registerNatives
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
+                        - RETURN TYPE: void
+                        - MODIFIERS: private static native
                      ** NO FIELD EXISTS **
 
+               ** NO INTERFACE IMPLEMENTED **
                CONSTRUCTOR: 
                   - NAME: ClassD
                   - PARAMETER TYPES: NONE
@@ -97,61 +119,6 @@ CLASS: ClassB
                   - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - PARAMETER TYPES: 
-                     long
-                     int
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final
-               METHOD: 
-                  - NAME: wait
-                  - EXCEPTIONS THROWN: 
-                     InterruptedException
-                  - PARAMETER TYPES: 
-                     long
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: equals
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: 
-                     Object
-                  - RETURN TYPE: boolean
-                  - MODIFIERS: public
-               METHOD: 
-                  - NAME: hashCode
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: int
-                  - MODIFIERS: public native
-               METHOD: 
-                  - NAME: getClass
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: class java.lang.Class
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: notify
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
-               METHOD: 
-                  - NAME: notifyAll
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: void
-                  - MODIFIERS: public final native
                FIELD: 
                   - NAME: val
                   - TYPE: ClassA
@@ -189,11 +156,7 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
-            CLASS: InterfaceA
-               ** NO SUPERCLASS EXISTS **
                INTERFACE: InterfaceB
-                  CLASS: InterfaceB
-                     ** NO SUPERCLASS EXISTS **
                      METHOD: 
                         - NAME: func0
                         - EXCEPTIONS THROWN: 
@@ -206,17 +169,6 @@ CLASS: ClassB
                      ** NO FIELD EXISTS **
 
                METHOD: 
-                  - NAME: func1
-                  - EXCEPTIONS THROWN: 
-                     Exception
-                  - PARAMETER TYPES: 
-                     int
-                     double
-                     boolean
-                     String
-                  - RETURN TYPE: void
-                  - MODIFIERS: public abstract
-               METHOD: 
                   - NAME: func2
                   - EXCEPTIONS THROWN: 
                      Exception
@@ -227,12 +179,14 @@ CLASS: ClassB
                   - RETURN TYPE: int
                   - MODIFIERS: public abstract
                METHOD: 
-                  - NAME: func0
+                  - NAME: func1
                   - EXCEPTIONS THROWN: 
                      Exception
                   - PARAMETER TYPES: 
                      int
+                     double
                      boolean
+                     String
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
@@ -258,17 +212,6 @@ CLASS: ClassB
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
-            - MODIFIERS: public
-         METHOD: 
-            - NAME: func1
-            - EXCEPTIONS THROWN: 
-               Exception
-            - PARAMETER TYPES: 
-               int
-               double
-               boolean
-               String
-            - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
             - NAME: func0
@@ -297,66 +240,16 @@ CLASS: ClassB
             - RETURN TYPE: int
             - MODIFIERS: public
          METHOD: 
-            - NAME: getVal3
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: int
-            - MODIFIERS: public
-         METHOD: 
-            - NAME: wait
+            - NAME: func1
             - EXCEPTIONS THROWN: 
-               InterruptedException
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: public final
-         METHOD: 
-            - NAME: wait
-            - EXCEPTIONS THROWN: 
-               InterruptedException
+               Exception
             - PARAMETER TYPES: 
-               long
                int
+               double
+               boolean
+               String
             - RETURN TYPE: void
-            - MODIFIERS: public final
-         METHOD: 
-            - NAME: wait
-            - EXCEPTIONS THROWN: 
-               InterruptedException
-            - PARAMETER TYPES: 
-               long
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: equals
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: 
-               Object
-            - RETURN TYPE: boolean
             - MODIFIERS: public
-         METHOD: 
-            - NAME: hashCode
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: int
-            - MODIFIERS: public native
-         METHOD: 
-            - NAME: getClass
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: class java.lang.Class
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: notify
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
-         METHOD: 
-            - NAME: notifyAll
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: public final native
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
@@ -374,8 +267,6 @@ CLASS: ClassB
          - REFERENCE VALUE: ClassA@610455d6
 
    INTERFACE: Runnable
-      CLASS: Runnable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: run
             - EXCEPTIONS THROWN: NONE
@@ -407,97 +298,6 @@ CLASS: ClassB
          int
       - RETURN TYPE: void
       - MODIFIERS: public
-   METHOD: 
-      - NAME: func1
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-         double
-         boolean
-         String
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: func0
-      - EXCEPTIONS THROWN: 
-         Exception
-      - PARAMETER TYPES: 
-         int
-         boolean
-      - RETURN TYPE: void
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: func2
-      - EXCEPTIONS THROWN: 
-         Exception
-         ArithmeticException
-         IllegalMonitorStateException
-      - PARAMETER TYPES: 
-         String
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: getVal3
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: equals
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: 
-         Object
-      - RETURN TYPE: boolean
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: hashCode
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: int
-      - MODIFIERS: public native
-   METHOD: 
-      - NAME: getClass
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: class java.lang.Class
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notify
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notifyAll
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
    FIELD: 
       - NAME: val
       - TYPE: ClassA

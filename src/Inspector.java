@@ -31,7 +31,8 @@ public class Inspector {
     method to inspect declaring class.
     */
     public void inspectClass(Class c, Object obj, boolean recursive, int depth) {
-        format(depth,"CLASS: " + c.getSimpleName());
+        if(!c.isInterface())                                    //make sure c is not an interface to print "CLASS:"
+            format(depth,"CLASS: " + c.getSimpleName());    //doesnt make sense to print CLASS name for an interface.
 
         if(c.isArray()){
             inspectArray(c, obj, recursive, depth);
@@ -70,11 +71,14 @@ public class Inspector {
     public void inspectInterfaces(Class c, Object obj, boolean recursive, int depth) {
         Class [] iArray = c.getInterfaces();         //array of class c's implementing interfaces
         int indents = depth + 1;
-
-        for (Class interFace : iArray){
-            format(indents, "INTERFACE: " + interFace.getSimpleName());
-            inspectClass(interFace, obj, recursive,depth + 2);
-        }
+        if(iArray.length > 0) {
+            for (Class interFace : iArray){
+                format(indents, "INTERFACE: " + interFace.getSimpleName());
+                inspectMethods(interFace, depth + 2);
+                inspectFields(interFace, obj, recursive, depth + 2);
+            }
+        }else if(!c.isInterface())                                  //ensure c is not an interface; interfaces can't
+            format(indents, "** NO INTERFACE IMPLEMENTED **");  //implement another interface.
     }
 
     /*
@@ -196,6 +200,7 @@ public class Inspector {
         }else
             recursiveIntrospection(obj, recursive, depth);
     }
+
     /*
     helper method used for recursiveIntrospection().
     if recursive is false, information is simply found of for the field, otherwise
@@ -233,6 +238,7 @@ public class Inspector {
         else
             format(indents + 1, "- EXCEPTIONS THROWN: NONE");
     }
+
     /*
     Helper method to handle parameter and exception types array traversal and printing out each element.
      */

@@ -5,10 +5,18 @@ Recursive: false
 CLASS: String
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
             - PARAMETER TYPES: NONE
             - MODIFIERS: public
+         METHOD: 
+            - NAME: finalize
+            - EXCEPTIONS THROWN: 
+               Throwable
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
@@ -59,6 +67,13 @@ CLASS: String
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
+            - NAME: clone
+            - EXCEPTIONS THROWN: 
+               CloneNotSupportedException
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: class java.lang.Object
+            - MODIFIERS: protected native
+         METHOD: 
             - NAME: notify
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
@@ -70,16 +85,18 @@ CLASS: String
             - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
+         METHOD: 
+            - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
-      CLASS: Serializable
-         ** NO SUPERCLASS EXISTS **
          ** NO FIELD EXISTS **
 
    INTERFACE: Comparable
-      CLASS: Comparable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: compareTo
             - EXCEPTIONS THROWN: NONE
@@ -90,8 +107,6 @@ CLASS: String
          ** NO FIELD EXISTS **
 
    INTERFACE: CharSequence
-      CLASS: CharSequence
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: toString
             - EXCEPTIONS THROWN: NONE
@@ -131,6 +146,18 @@ CLASS: String
             - PARAMETER TYPES: NONE
             - RETURN TYPE: interface java.util.stream.IntStream
             - MODIFIERS: public
+         METHOD: 
+            - NAME: lambda$chars$0
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: interface java.util.Spliterator$OfInt
+            - MODIFIERS: private
+         METHOD: 
+            - NAME: lambda$codePoints$1
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: interface java.util.Spliterator$OfInt
+            - MODIFIERS: private
          ** NO FIELD EXISTS **
 
    CONSTRUCTOR: 
@@ -289,6 +316,30 @@ CLASS: String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
+      - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         char[]
+         int
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: indexOf
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         String
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
       - NAME: valueOf
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
@@ -360,6 +411,15 @@ CLASS: String
          int
       - RETURN TYPE: char
       - MODIFIERS: public
+   METHOD: 
+      - NAME: checkBounds
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         byte[]
+         int
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: private static
    METHOD: 
       - NAME: codePointAt
       - EXCEPTIONS THROWN: NONE
@@ -506,6 +566,22 @@ CLASS: String
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
+      - NAME: getChars
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         char[]
+         int
+      - RETURN TYPE: void
+      - MODIFIERS: NONE
+   METHOD: 
+      - NAME: indexOfSupplementary
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: private
+   METHOD: 
       - NAME: intern
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
@@ -551,6 +627,17 @@ CLASS: String
       - NAME: lastIndexOf
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         String
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
          String
          int
       - RETURN TYPE: int
@@ -564,6 +651,27 @@ CLASS: String
       - RETURN TYPE: int
       - MODIFIERS: public
    METHOD: 
+      - NAME: lastIndexOf
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         char[]
+         int
+         int
+         char[]
+         int
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: static
+   METHOD: 
+      - NAME: lastIndexOfSupplementary
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         int
+         int
+      - RETURN TYPE: int
+      - MODIFIERS: private
+   METHOD: 
       - NAME: length
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
@@ -576,6 +684,13 @@ CLASS: String
          String
       - RETURN TYPE: boolean
       - MODIFIERS: public
+   METHOD: 
+      - NAME: nonSyncContentEquals
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: 
+         AbstractStringBuilder
+      - RETURN TYPE: boolean
+      - MODIFIERS: private
    METHOD: 
       - NAME: offsetByCodePoints
       - EXCEPTIONS THROWN: NONE
@@ -727,60 +842,6 @@ CLASS: String
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: getClass
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: class java.lang.Class
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notify
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notifyAll
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: chars
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: interface java.util.stream.IntStream
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: codePoints
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: interface java.util.stream.IntStream
       - MODIFIERS: public
    FIELD: 
       - NAME: value

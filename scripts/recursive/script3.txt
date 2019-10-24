@@ -9,19 +9,23 @@ CLASS: ClassB
             CLASS: ClassD
                SUPERCLASS: Object
                   CLASS: Object
+                     ** NO INTERFACE IMPLEMENTED **
                      CONSTRUCTOR: 
                         - NAME: java.lang.Object
+                        - PARAMETER TYPES: NONE
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: finalize
                         - EXCEPTIONS THROWN: 
                            Throwable
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: protected
                      METHOD: 
                         - NAME: wait
                         - EXCEPTIONS THROWN: 
                            InterruptedException
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final
                      METHOD: 
@@ -43,44 +47,60 @@ CLASS: ClassB
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: equals
+                        - EXCEPTIONS THROWN: NONE
                         - PARAMETER TYPES: 
                            Object
                         - RETURN TYPE: boolean
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: toString
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.String
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: hashCode
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: int
                         - MODIFIERS: public native
                      METHOD: 
                         - NAME: getClass
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.Class
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: clone
                         - EXCEPTIONS THROWN: 
                            CloneNotSupportedException
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.Object
                         - MODIFIERS: protected native
                      METHOD: 
                         - NAME: notify
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: notifyAll
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: registerNatives
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: private static native
                      ** NO FIELD EXISTS **
 
+               ** NO INTERFACE IMPLEMENTED **
                CONSTRUCTOR: 
                   - NAME: ClassD
+                  - PARAMETER TYPES: NONE
                   - MODIFIERS: public
                CONSTRUCTOR: 
                   - NAME: ClassD
@@ -89,10 +109,14 @@ CLASS: ClassB
                   - MODIFIERS: public
                METHOD: 
                   - NAME: toString
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.String
                   - MODIFIERS: public
                METHOD: 
                   - NAME: getVal3
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public
                FIELD: 
@@ -102,19 +126,23 @@ CLASS: ClassB
             CLASS: ClassA
                SUPERCLASS: Object
                   CLASS: Object
+                     ** NO INTERFACE IMPLEMENTED **
                      CONSTRUCTOR: 
                         - NAME: java.lang.Object
+                        - PARAMETER TYPES: NONE
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: finalize
                         - EXCEPTIONS THROWN: 
                            Throwable
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: protected
                      METHOD: 
                         - NAME: wait
                         - EXCEPTIONS THROWN: 
                            InterruptedException
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final
                      METHOD: 
@@ -136,58 +164,69 @@ CLASS: ClassB
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: equals
+                        - EXCEPTIONS THROWN: NONE
                         - PARAMETER TYPES: 
                            Object
                         - RETURN TYPE: boolean
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: toString
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.String
                         - MODIFIERS: public
                      METHOD: 
                         - NAME: hashCode
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: int
                         - MODIFIERS: public native
                      METHOD: 
                         - NAME: getClass
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.Class
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: clone
                         - EXCEPTIONS THROWN: 
                            CloneNotSupportedException
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: class java.lang.Object
                         - MODIFIERS: protected native
                      METHOD: 
                         - NAME: notify
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: notifyAll
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public final native
                      METHOD: 
                         - NAME: registerNatives
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: private static native
                      ** NO FIELD EXISTS **
 
                INTERFACE: Serializable
-                  CLASS: Serializable
-                     ** NO SUPERCLASS EXISTS **
                      ** NO FIELD EXISTS **
-
                INTERFACE: Runnable
-                  CLASS: Runnable
-                     ** NO SUPERCLASS EXISTS **
                      METHOD: 
                         - NAME: run
+                        - EXCEPTIONS THROWN: NONE
+                        - PARAMETER TYPES: NONE
                         - RETURN TYPE: void
                         - MODIFIERS: public abstract
                      ** NO FIELD EXISTS **
-
                CONSTRUCTOR: 
                   - NAME: ClassA
+                  - PARAMETER TYPES: NONE
                   - MODIFIERS: public
                CONSTRUCTOR: 
                   - NAME: ClassA
@@ -196,10 +235,14 @@ CLASS: ClassB
                   - MODIFIERS: public
                METHOD: 
                   - NAME: run
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public
                METHOD: 
                   - NAME: toString
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.String
                   - MODIFIERS: public
                METHOD: 
@@ -211,13 +254,17 @@ CLASS: ClassB
                   - RETURN TYPE: void
                   - MODIFIERS: public
                METHOD: 
-                  - NAME: printSomething
-                  - RETURN TYPE: void
-                  - MODIFIERS: private
-               METHOD: 
                   - NAME: getVal
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public
+               METHOD: 
+                  - NAME: printSomething
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
+                  - RETURN TYPE: void
+                  - MODIFIERS: private
                FIELD: 
                   - NAME: val
                   - TYPE: int
@@ -266,22 +313,6 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
-            CLASS: InterfaceA
-               ** NO SUPERCLASS EXISTS **
-               INTERFACE: InterfaceB
-                  CLASS: InterfaceB
-                     ** NO SUPERCLASS EXISTS **
-                     METHOD: 
-                        - NAME: func0
-                        - EXCEPTIONS THROWN: 
-                           Exception
-                        - PARAMETER TYPES: 
-                           int
-                           boolean
-                        - RETURN TYPE: void
-                        - MODIFIERS: public abstract
-                     ** NO FIELD EXISTS **
-
                METHOD: 
                   - NAME: func1
                   - EXCEPTIONS THROWN: 
@@ -304,9 +335,9 @@ CLASS: ClassB
                   - RETURN TYPE: int
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
-
          CONSTRUCTOR: 
             - NAME: ClassC
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          CONSTRUCTOR: 
             - NAME: ClassC
@@ -316,18 +347,16 @@ CLASS: ClassB
             - MODIFIERS: public
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
-         METHOD: 
-            - NAME: func3
-            - PARAMETER TYPES: 
-               int
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
          METHOD: 
             - NAME: func1
             - EXCEPTIONS THROWN: 
@@ -340,15 +369,12 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: func2
-            - EXCEPTIONS THROWN: 
-               Exception
-               ArithmeticException
-               IllegalMonitorStateException
+            - NAME: func3
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
-               String
-            - RETURN TYPE: int
-            - MODIFIERS: public
+               int
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
          METHOD: 
             - NAME: func0
             - EXCEPTIONS THROWN: 
@@ -358,6 +384,16 @@ CLASS: ClassB
                boolean
             - RETURN TYPE: void
             - MODIFIERS: public
+         METHOD: 
+            - NAME: func2
+            - EXCEPTIONS THROWN: 
+               Exception
+               ArithmeticException
+               IllegalMonitorStateException
+            - PARAMETER TYPES: 
+               String
+            - RETURN TYPE: int
+            - MODIFIERS: public
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
@@ -365,19 +401,23 @@ CLASS: ClassB
       CLASS: ClassA
          SUPERCLASS: Object
             CLASS: Object
+               ** NO INTERFACE IMPLEMENTED **
                CONSTRUCTOR: 
                   - NAME: java.lang.Object
+                  - PARAMETER TYPES: NONE
                   - MODIFIERS: public
                METHOD: 
                   - NAME: finalize
                   - EXCEPTIONS THROWN: 
                      Throwable
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: protected
                METHOD: 
                   - NAME: wait
                   - EXCEPTIONS THROWN: 
                      InterruptedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final
                METHOD: 
@@ -399,58 +439,69 @@ CLASS: ClassB
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: equals
+                  - EXCEPTIONS THROWN: NONE
                   - PARAMETER TYPES: 
                      Object
                   - RETURN TYPE: boolean
                   - MODIFIERS: public
                METHOD: 
                   - NAME: toString
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.String
                   - MODIFIERS: public
                METHOD: 
                   - NAME: hashCode
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public native
                METHOD: 
                   - NAME: getClass
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Class
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: clone
                   - EXCEPTIONS THROWN: 
                      CloneNotSupportedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Object
                   - MODIFIERS: protected native
                METHOD: 
                   - NAME: notify
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: notifyAll
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: registerNatives
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: private static native
                ** NO FIELD EXISTS **
 
          INTERFACE: Serializable
-            CLASS: Serializable
-               ** NO SUPERCLASS EXISTS **
                ** NO FIELD EXISTS **
-
          INTERFACE: Runnable
-            CLASS: Runnable
-               ** NO SUPERCLASS EXISTS **
                METHOD: 
                   - NAME: run
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
-
          CONSTRUCTOR: 
             - NAME: ClassA
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          CONSTRUCTOR: 
             - NAME: ClassA
@@ -459,10 +510,14 @@ CLASS: ClassB
             - MODIFIERS: public
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
@@ -474,13 +529,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -504,19 +563,23 @@ CLASS: ClassB
       CLASS: ClassA
          SUPERCLASS: Object
             CLASS: Object
+               ** NO INTERFACE IMPLEMENTED **
                CONSTRUCTOR: 
                   - NAME: java.lang.Object
+                  - PARAMETER TYPES: NONE
                   - MODIFIERS: public
                METHOD: 
                   - NAME: finalize
                   - EXCEPTIONS THROWN: 
                      Throwable
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: protected
                METHOD: 
                   - NAME: wait
                   - EXCEPTIONS THROWN: 
                      InterruptedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final
                METHOD: 
@@ -538,58 +601,69 @@ CLASS: ClassB
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: equals
+                  - EXCEPTIONS THROWN: NONE
                   - PARAMETER TYPES: 
                      Object
                   - RETURN TYPE: boolean
                   - MODIFIERS: public
                METHOD: 
                   - NAME: toString
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.String
                   - MODIFIERS: public
                METHOD: 
                   - NAME: hashCode
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public native
                METHOD: 
                   - NAME: getClass
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Class
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: clone
                   - EXCEPTIONS THROWN: 
                      CloneNotSupportedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Object
                   - MODIFIERS: protected native
                METHOD: 
                   - NAME: notify
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: notifyAll
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: registerNatives
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: private static native
                ** NO FIELD EXISTS **
 
          INTERFACE: Serializable
-            CLASS: Serializable
-               ** NO SUPERCLASS EXISTS **
                ** NO FIELD EXISTS **
-
          INTERFACE: Runnable
-            CLASS: Runnable
-               ** NO SUPERCLASS EXISTS **
                METHOD: 
                   - NAME: run
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
-
          CONSTRUCTOR: 
             - NAME: ClassA
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          CONSTRUCTOR: 
             - NAME: ClassA
@@ -598,10 +672,14 @@ CLASS: ClassB
             - MODIFIERS: public
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
@@ -613,13 +691,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -643,19 +725,23 @@ CLASS: ClassB
       CLASS: ClassA
          SUPERCLASS: Object
             CLASS: Object
+               ** NO INTERFACE IMPLEMENTED **
                CONSTRUCTOR: 
                   - NAME: java.lang.Object
+                  - PARAMETER TYPES: NONE
                   - MODIFIERS: public
                METHOD: 
                   - NAME: finalize
                   - EXCEPTIONS THROWN: 
                      Throwable
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: protected
                METHOD: 
                   - NAME: wait
                   - EXCEPTIONS THROWN: 
                      InterruptedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final
                METHOD: 
@@ -677,58 +763,69 @@ CLASS: ClassB
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: equals
+                  - EXCEPTIONS THROWN: NONE
                   - PARAMETER TYPES: 
                      Object
                   - RETURN TYPE: boolean
                   - MODIFIERS: public
                METHOD: 
                   - NAME: toString
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.String
                   - MODIFIERS: public
                METHOD: 
                   - NAME: hashCode
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public native
                METHOD: 
                   - NAME: getClass
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Class
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: clone
                   - EXCEPTIONS THROWN: 
                      CloneNotSupportedException
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: class java.lang.Object
                   - MODIFIERS: protected native
                METHOD: 
                   - NAME: notify
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: notifyAll
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public final native
                METHOD: 
                   - NAME: registerNatives
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: private static native
                ** NO FIELD EXISTS **
 
          INTERFACE: Serializable
-            CLASS: Serializable
-               ** NO SUPERCLASS EXISTS **
                ** NO FIELD EXISTS **
-
          INTERFACE: Runnable
-            CLASS: Runnable
-               ** NO SUPERCLASS EXISTS **
                METHOD: 
                   - NAME: run
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
-
          CONSTRUCTOR: 
             - NAME: ClassA
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          CONSTRUCTOR: 
             - NAME: ClassA
@@ -737,10 +834,14 @@ CLASS: ClassB
             - MODIFIERS: public
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
@@ -752,13 +853,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -777,27 +882,32 @@ CLASS: ClassB
 
 
    INTERFACE: Runnable
-      CLASS: Runnable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: ClassB
+      - PARAMETER TYPES: NONE
       - MODIFIERS: public
    METHOD: 
       - NAME: run
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
       - NAME: toString
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
       - NAME: func3
+      - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: 
          int
       - RETURN TYPE: void
@@ -809,19 +919,23 @@ CLASS: ClassB
 CLASS: ClassA
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          METHOD: 
             - NAME: finalize
             - EXCEPTIONS THROWN: 
                Throwable
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
                InterruptedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final
          METHOD: 
@@ -843,58 +957,69 @@ CLASS: ClassA
             - MODIFIERS: public final native
          METHOD: 
             - NAME: equals
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: boolean
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
             - NAME: hashCode
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public native
          METHOD: 
             - NAME: getClass
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
             - NAME: clone
             - EXCEPTIONS THROWN: 
                CloneNotSupportedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Object
             - MODIFIERS: protected native
          METHOD: 
             - NAME: notify
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: notifyAll
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
-      CLASS: Serializable
-         ** NO SUPERCLASS EXISTS **
          ** NO FIELD EXISTS **
-
    INTERFACE: Runnable
-      CLASS: Runnable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: ClassA
+      - PARAMETER TYPES: NONE
       - MODIFIERS: public
    CONSTRUCTOR: 
       - NAME: ClassA
@@ -903,10 +1028,14 @@ CLASS: ClassA
       - MODIFIERS: public
    METHOD: 
       - NAME: run
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
       - NAME: toString
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
@@ -918,13 +1047,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: printSomething
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
       - NAME: getVal
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: void
+      - MODIFIERS: private
    FIELD: 
       - NAME: val
       - TYPE: int
@@ -948,19 +1081,23 @@ CLASS: ClassA
 CLASS: ClassA
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
+            - PARAMETER TYPES: NONE
             - MODIFIERS: public
          METHOD: 
             - NAME: finalize
             - EXCEPTIONS THROWN: 
                Throwable
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
                InterruptedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final
          METHOD: 
@@ -982,58 +1119,69 @@ CLASS: ClassA
             - MODIFIERS: public final native
          METHOD: 
             - NAME: equals
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                Object
             - RETURN TYPE: boolean
             - MODIFIERS: public
          METHOD: 
             - NAME: toString
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
             - NAME: hashCode
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public native
          METHOD: 
             - NAME: getClass
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
             - NAME: clone
             - EXCEPTIONS THROWN: 
                CloneNotSupportedException
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: class java.lang.Object
             - MODIFIERS: protected native
          METHOD: 
             - NAME: notify
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: notifyAll
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
          METHOD: 
             - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
    INTERFACE: Serializable
-      CLASS: Serializable
-         ** NO SUPERCLASS EXISTS **
          ** NO FIELD EXISTS **
-
    INTERFACE: Runnable
-      CLASS: Runnable
-         ** NO SUPERCLASS EXISTS **
          METHOD: 
             - NAME: run
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: ClassA
+      - PARAMETER TYPES: NONE
       - MODIFIERS: public
    CONSTRUCTOR: 
       - NAME: ClassA
@@ -1042,10 +1190,14 @@ CLASS: ClassA
       - MODIFIERS: public
    METHOD: 
       - NAME: run
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
       - NAME: toString
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: class java.lang.String
       - MODIFIERS: public
    METHOD: 
@@ -1057,13 +1209,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: printSomething
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
       - NAME: getVal
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: void
+      - MODIFIERS: private
    FIELD: 
       - NAME: val
       - TYPE: int

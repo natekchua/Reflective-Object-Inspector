@@ -5,10 +5,18 @@ Recursive: false
 CLASS: ClassD
    SUPERCLASS: Object
       CLASS: Object
+         ** NO INTERFACE IMPLEMENTED **
          CONSTRUCTOR: 
             - NAME: java.lang.Object
             - PARAMETER TYPES: NONE
             - MODIFIERS: public
+         METHOD: 
+            - NAME: finalize
+            - EXCEPTIONS THROWN: 
+               Throwable
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: protected
          METHOD: 
             - NAME: wait
             - EXCEPTIONS THROWN: 
@@ -59,6 +67,13 @@ CLASS: ClassD
             - RETURN TYPE: class java.lang.Class
             - MODIFIERS: public final native
          METHOD: 
+            - NAME: clone
+            - EXCEPTIONS THROWN: 
+               CloneNotSupportedException
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: class java.lang.Object
+            - MODIFIERS: protected native
+         METHOD: 
             - NAME: notify
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
@@ -70,8 +85,15 @@ CLASS: ClassD
             - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: public final native
+         METHOD: 
+            - NAME: registerNatives
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private static native
          ** NO FIELD EXISTS **
 
+   ** NO INTERFACE IMPLEMENTED **
    CONSTRUCTOR: 
       - NAME: ClassD
       - PARAMETER TYPES: NONE
@@ -93,61 +115,6 @@ CLASS: ClassD
       - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-         int
-      - RETURN TYPE: void
-      - MODIFIERS: public final
-   METHOD: 
-      - NAME: wait
-      - EXCEPTIONS THROWN: 
-         InterruptedException
-      - PARAMETER TYPES: 
-         long
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: equals
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: 
-         Object
-      - RETURN TYPE: boolean
-      - MODIFIERS: public
-   METHOD: 
-      - NAME: hashCode
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: int
-      - MODIFIERS: public native
-   METHOD: 
-      - NAME: getClass
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: class java.lang.Class
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notify
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
-   METHOD: 
-      - NAME: notifyAll
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: public final native
    FIELD: 
       - NAME: val
       - TYPE: ClassA
