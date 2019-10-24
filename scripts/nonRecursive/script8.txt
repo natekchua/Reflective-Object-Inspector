@@ -885,6 +885,6 @@ CLASS: String
       - NAME: CASE_INSENSITIVE_ORDER
       - TYPE: Comparator
       - MODIFIERS: public static final
-   - REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@2b193f2d
+   - REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@355da254
 
 ======================================================

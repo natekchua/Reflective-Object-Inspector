@@ -133,17 +133,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: printSomething
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
       - NAME: getVal
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: void
+      - MODIFIERS: private
    FIELD: 
       - NAME: val
       - TYPE: int

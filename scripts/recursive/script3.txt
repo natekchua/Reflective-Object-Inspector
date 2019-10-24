@@ -254,17 +254,17 @@ CLASS: ClassB
                   - RETURN TYPE: void
                   - MODIFIERS: public
                METHOD: 
-                  - NAME: printSomething
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: void
-                  - MODIFIERS: private
-               METHOD: 
                   - NAME: getVal
                   - EXCEPTIONS THROWN: NONE
                   - PARAMETER TYPES: NONE
                   - RETURN TYPE: int
                   - MODIFIERS: public
+               METHOD: 
+                  - NAME: printSomething
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
+                  - RETURN TYPE: void
+                  - MODIFIERS: private
                FIELD: 
                   - NAME: val
                   - TYPE: int
@@ -313,6 +313,17 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
+               INTERFACE: InterfaceB
+                     METHOD: 
+                        - NAME: func0
+                        - EXCEPTIONS THROWN: 
+                           Exception
+                        - PARAMETER TYPES: 
+                           int
+                           boolean
+                        - RETURN TYPE: void
+                        - MODIFIERS: public abstract
+                     ** NO FIELD EXISTS **
                METHOD: 
                   - NAME: func2
                   - EXCEPTIONS THROWN: 
@@ -368,6 +379,15 @@ CLASS: ClassB
             - RETURN TYPE: int
             - MODIFIERS: public
          METHOD: 
+            - NAME: func0
+            - EXCEPTIONS THROWN: 
+               Exception
+            - PARAMETER TYPES: 
+               int
+               boolean
+            - RETURN TYPE: void
+            - MODIFIERS: public
+         METHOD: 
             - NAME: func1
             - EXCEPTIONS THROWN: 
                Exception
@@ -376,15 +396,6 @@ CLASS: ClassB
                double
                boolean
                String
-            - RETURN TYPE: void
-            - MODIFIERS: public
-         METHOD: 
-            - NAME: func0
-            - EXCEPTIONS THROWN: 
-               Exception
-            - PARAMETER TYPES: 
-               int
-               boolean
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
@@ -529,17 +540,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -691,17 +702,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -853,17 +864,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: printSomething
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: void
-            - MODIFIERS: private
-         METHOD: 
             - NAME: getVal
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: printSomething
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: void
+            - MODIFIERS: private
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -1047,17 +1058,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: printSomething
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
       - NAME: getVal
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: void
+      - MODIFIERS: private
    FIELD: 
       - NAME: val
       - TYPE: int
@@ -1209,17 +1220,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: printSomething
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: void
-      - MODIFIERS: private
-   METHOD: 
       - NAME: getVal
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: int
       - MODIFIERS: public
+   METHOD: 
+      - NAME: printSomething
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: void
+      - MODIFIERS: private
    FIELD: 
       - NAME: val
       - TYPE: int

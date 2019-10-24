@@ -156,16 +156,17 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
-               METHOD: 
-                  - NAME: func2
-                  - EXCEPTIONS THROWN: 
-                     Exception
-                     ArithmeticException
-                     IllegalMonitorStateException
-                  - PARAMETER TYPES: 
-                     String
-                  - RETURN TYPE: int
-                  - MODIFIERS: public abstract
+               INTERFACE: InterfaceB
+                     METHOD: 
+                        - NAME: func0
+                        - EXCEPTIONS THROWN: 
+                           Exception
+                        - PARAMETER TYPES: 
+                           int
+                           boolean
+                        - RETURN TYPE: void
+                        - MODIFIERS: public abstract
+                     ** NO FIELD EXISTS **
                METHOD: 
                   - NAME: func1
                   - EXCEPTIONS THROWN: 
@@ -176,6 +177,16 @@ CLASS: ClassB
                      boolean
                      String
                   - RETURN TYPE: void
+                  - MODIFIERS: public abstract
+               METHOD: 
+                  - NAME: func2
+                  - EXCEPTIONS THROWN: 
+                     Exception
+                     ArithmeticException
+                     IllegalMonitorStateException
+                  - PARAMETER TYPES: 
+                     String
+                  - RETURN TYPE: int
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
          CONSTRUCTOR: 
@@ -201,12 +212,30 @@ CLASS: ClassB
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
+            - NAME: func3
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: 
+               int
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
+         METHOD: 
             - NAME: func0
             - EXCEPTIONS THROWN: 
                Exception
             - PARAMETER TYPES: 
                int
                boolean
+            - RETURN TYPE: void
+            - MODIFIERS: public
+         METHOD: 
+            - NAME: func1
+            - EXCEPTIONS THROWN: 
+               Exception
+            - PARAMETER TYPES: 
+               int
+               double
+               boolean
+               String
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
@@ -219,39 +248,21 @@ CLASS: ClassB
                String
             - RETURN TYPE: int
             - MODIFIERS: public
-         METHOD: 
-            - NAME: func3
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: 
-               int
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
-         METHOD: 
-            - NAME: func1
-            - EXCEPTIONS THROWN: 
-               Exception
-            - PARAMETER TYPES: 
-               int
-               double
-               boolean
-               String
-            - RETURN TYPE: void
-            - MODIFIERS: public
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@5cad8086
+         - REFERENCE VALUE: ClassA@6e0be858
          FIELD: 
             - NAME: val3
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@6e0be858
+         - REFERENCE VALUE: ClassA@61bbe9ba
          FIELD: 
             - NAME: val4
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@61bbe9ba
+         - REFERENCE VALUE: ClassA@610455d6
 
    INTERFACE: Runnable
          METHOD: 
@@ -288,12 +299,12 @@ CLASS: ClassB
       - NAME: val
       - TYPE: ClassA
       - MODIFIERS: private
-   - REFERENCE VALUE: ClassA@511d50c0
+   - REFERENCE VALUE: ClassA@60e53b93
    FIELD: 
       - NAME: val2
       - TYPE: ClassA
       - MODIFIERS: private
-   - REFERENCE VALUE: ClassA@60e53b93
+   - REFERENCE VALUE: ClassA@5e2de80c
    FIELD: 
       - NAME: val3
       - TYPE: ClassA
