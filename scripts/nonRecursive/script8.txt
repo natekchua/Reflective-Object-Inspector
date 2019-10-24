@@ -95,7 +95,6 @@ CLASS: String
 
    INTERFACE: Serializable
          ** NO FIELD EXISTS **
-
    INTERFACE: Comparable
          METHOD: 
             - NAME: compareTo
@@ -105,7 +104,6 @@ CLASS: String
             - RETURN TYPE: int
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    INTERFACE: CharSequence
          METHOD: 
             - NAME: toString
@@ -159,7 +157,6 @@ CLASS: String
             - RETURN TYPE: interface java.util.Spliterator$OfInt
             - MODIFIERS: private
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: java.lang.String
       - PARAMETER TYPES: 
@@ -888,6 +885,6 @@ CLASS: String
       - NAME: CASE_INSENSITIVE_ORDER
       - TYPE: Comparator
       - MODIFIERS: public static final
-   - REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@355da254
+   - REFERENCE VALUE: java.lang.String$CaseInsensitiveComparator@2b193f2d
 
 ======================================================

@@ -119,7 +119,7 @@ CLASS: ClassD
       - NAME: val
       - TYPE: ClassA
       - MODIFIERS: private
-   - REFERENCE VALUE: ClassA@266474c2
+   - REFERENCE VALUE: ClassA@1d44bcfa
    FIELD: 
       - NAME: val2
       - TYPE: ClassA

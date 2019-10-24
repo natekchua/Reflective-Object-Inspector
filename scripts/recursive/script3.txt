@@ -254,17 +254,17 @@ CLASS: ClassB
                   - RETURN TYPE: void
                   - MODIFIERS: public
                METHOD: 
-                  - NAME: getVal
-                  - EXCEPTIONS THROWN: NONE
-                  - PARAMETER TYPES: NONE
-                  - RETURN TYPE: int
-                  - MODIFIERS: public
-               METHOD: 
                   - NAME: printSomething
                   - EXCEPTIONS THROWN: NONE
                   - PARAMETER TYPES: NONE
                   - RETURN TYPE: void
                   - MODIFIERS: private
+               METHOD: 
+                  - NAME: getVal
+                  - EXCEPTIONS THROWN: NONE
+                  - PARAMETER TYPES: NONE
+                  - RETURN TYPE: int
+                  - MODIFIERS: public
                FIELD: 
                   - NAME: val
                   - TYPE: int
@@ -314,6 +314,16 @@ CLASS: ClassB
 
          INTERFACE: InterfaceA
                METHOD: 
+                  - NAME: func2
+                  - EXCEPTIONS THROWN: 
+                     Exception
+                     ArithmeticException
+                     IllegalMonitorStateException
+                  - PARAMETER TYPES: 
+                     String
+                  - RETURN TYPE: int
+                  - MODIFIERS: public abstract
+               METHOD: 
                   - NAME: func1
                   - EXCEPTIONS THROWN: 
                      Exception
@@ -323,16 +333,6 @@ CLASS: ClassB
                      boolean
                      String
                   - RETURN TYPE: void
-                  - MODIFIERS: public abstract
-               METHOD: 
-                  - NAME: func2
-                  - EXCEPTIONS THROWN: 
-                     Exception
-                     ArithmeticException
-                     IllegalMonitorStateException
-                  - PARAMETER TYPES: 
-                     String
-                  - RETURN TYPE: int
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
          CONSTRUCTOR: 
@@ -358,6 +358,16 @@ CLASS: ClassB
             - RETURN TYPE: class java.lang.String
             - MODIFIERS: public
          METHOD: 
+            - NAME: func2
+            - EXCEPTIONS THROWN: 
+               Exception
+               ArithmeticException
+               IllegalMonitorStateException
+            - PARAMETER TYPES: 
+               String
+            - RETURN TYPE: int
+            - MODIFIERS: public
+         METHOD: 
             - NAME: func1
             - EXCEPTIONS THROWN: 
                Exception
@@ -369,13 +379,6 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: func3
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: 
-               int
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
-         METHOD: 
             - NAME: func0
             - EXCEPTIONS THROWN: 
                Exception
@@ -385,15 +388,12 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: func2
-            - EXCEPTIONS THROWN: 
-               Exception
-               ArithmeticException
-               IllegalMonitorStateException
+            - NAME: func3
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
-               String
-            - RETURN TYPE: int
-            - MODIFIERS: public
+               int
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
@@ -529,17 +529,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: getVal
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: int
-            - MODIFIERS: public
-         METHOD: 
             - NAME: printSomething
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private
+         METHOD: 
+            - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: int
+            - MODIFIERS: public
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -691,17 +691,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: getVal
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: int
-            - MODIFIERS: public
-         METHOD: 
             - NAME: printSomething
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private
+         METHOD: 
+            - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: int
+            - MODIFIERS: public
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -853,17 +853,17 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: getVal
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: NONE
-            - RETURN TYPE: int
-            - MODIFIERS: public
-         METHOD: 
             - NAME: printSomething
             - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: NONE
             - RETURN TYPE: void
             - MODIFIERS: private
+         METHOD: 
+            - NAME: getVal
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: NONE
+            - RETURN TYPE: int
+            - MODIFIERS: public
          FIELD: 
             - NAME: val
             - TYPE: int
@@ -1047,17 +1047,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: getVal
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
       - NAME: printSomething
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: void
       - MODIFIERS: private
+   METHOD: 
+      - NAME: getVal
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: int
+      - MODIFIERS: public
    FIELD: 
       - NAME: val
       - TYPE: int
@@ -1209,17 +1209,17 @@ CLASS: ClassA
       - RETURN TYPE: void
       - MODIFIERS: public
    METHOD: 
-      - NAME: getVal
-      - EXCEPTIONS THROWN: NONE
-      - PARAMETER TYPES: NONE
-      - RETURN TYPE: int
-      - MODIFIERS: public
-   METHOD: 
       - NAME: printSomething
       - EXCEPTIONS THROWN: NONE
       - PARAMETER TYPES: NONE
       - RETURN TYPE: void
       - MODIFIERS: private
+   METHOD: 
+      - NAME: getVal
+      - EXCEPTIONS THROWN: NONE
+      - PARAMETER TYPES: NONE
+      - RETURN TYPE: int
+      - MODIFIERS: public
    FIELD: 
       - NAME: val
       - TYPE: int

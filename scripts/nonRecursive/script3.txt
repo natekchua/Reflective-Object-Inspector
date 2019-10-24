@@ -156,18 +156,6 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
-               INTERFACE: InterfaceB
-                     METHOD: 
-                        - NAME: func0
-                        - EXCEPTIONS THROWN: 
-                           Exception
-                        - PARAMETER TYPES: 
-                           int
-                           boolean
-                        - RETURN TYPE: void
-                        - MODIFIERS: public abstract
-                     ** NO FIELD EXISTS **
-
                METHOD: 
                   - NAME: func2
                   - EXCEPTIONS THROWN: 
@@ -190,7 +178,6 @@ CLASS: ClassB
                   - RETURN TYPE: void
                   - MODIFIERS: public abstract
                ** NO FIELD EXISTS **
-
          CONSTRUCTOR: 
             - NAME: ClassC
             - PARAMETER TYPES: NONE
@@ -223,13 +210,6 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: func3
-            - EXCEPTIONS THROWN: NONE
-            - PARAMETER TYPES: 
-               int
-            - RETURN TYPE: void
-            - MODIFIERS: public abstract
-         METHOD: 
             - NAME: func2
             - EXCEPTIONS THROWN: 
                Exception
@@ -239,6 +219,13 @@ CLASS: ClassB
                String
             - RETURN TYPE: int
             - MODIFIERS: public
+         METHOD: 
+            - NAME: func3
+            - EXCEPTIONS THROWN: NONE
+            - PARAMETER TYPES: 
+               int
+            - RETURN TYPE: void
+            - MODIFIERS: public abstract
          METHOD: 
             - NAME: func1
             - EXCEPTIONS THROWN: 
@@ -254,17 +241,17 @@ CLASS: ClassB
             - NAME: val2
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@6e0be858
+         - REFERENCE VALUE: ClassA@5cad8086
          FIELD: 
             - NAME: val3
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@61bbe9ba
+         - REFERENCE VALUE: ClassA@6e0be858
          FIELD: 
             - NAME: val4
             - TYPE: ClassA
             - MODIFIERS: private
-         - REFERENCE VALUE: ClassA@610455d6
+         - REFERENCE VALUE: ClassA@61bbe9ba
 
    INTERFACE: Runnable
          METHOD: 
@@ -274,7 +261,6 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: ClassB
       - PARAMETER TYPES: NONE
@@ -302,12 +288,12 @@ CLASS: ClassB
       - NAME: val
       - TYPE: ClassA
       - MODIFIERS: private
-   - REFERENCE VALUE: ClassA@60e53b93
+   - REFERENCE VALUE: ClassA@511d50c0
    FIELD: 
       - NAME: val2
       - TYPE: ClassA
       - MODIFIERS: private
-   - REFERENCE VALUE: ClassA@5e2de80c
+   - REFERENCE VALUE: ClassA@60e53b93
    FIELD: 
       - NAME: val3
       - TYPE: ClassA

@@ -95,7 +95,6 @@ CLASS: ClassA
 
    INTERFACE: Serializable
          ** NO FIELD EXISTS **
-
    INTERFACE: Runnable
          METHOD: 
             - NAME: run
@@ -104,7 +103,6 @@ CLASS: ClassA
             - RETURN TYPE: void
             - MODIFIERS: public abstract
          ** NO FIELD EXISTS **
-
    CONSTRUCTOR: 
       - NAME: ClassA
       - PARAMETER TYPES: NONE
