@@ -75,7 +75,7 @@ public class Inspector {
             for (Class interFace : iArray){
                 format(indents, "INTERFACE: " + interFace.getSimpleName());
 
-                if(obj.getClass().getSuperclass() != null)           //check if calling interface extends another interface
+                if(interFace.getSuperclass() != null)           //check if calling interface extends another interface
                     inspectInterfaces(interFace, obj, recursive, depth + 2);
 
                 inspectMethods(interFace, depth + 2);

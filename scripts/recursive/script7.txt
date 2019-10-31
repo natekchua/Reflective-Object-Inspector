@@ -1,6 +1,6 @@
 ======================================================
 Filename: script7.txt
-Running Test: [[LClassB;@61bbe9ba
+Running Test: [[LClassB;@6e0be858
 Recursive: true
 CLASS: ClassB[][]
    ARRAY: 

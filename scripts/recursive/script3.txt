@@ -313,17 +313,6 @@ CLASS: ClassB
                      ]
 
          INTERFACE: InterfaceA
-               INTERFACE: InterfaceB
-                     METHOD: 
-                        - NAME: func0
-                        - EXCEPTIONS THROWN: 
-                           Exception
-                        - PARAMETER TYPES: 
-                           int
-                           boolean
-                        - RETURN TYPE: void
-                        - MODIFIERS: public abstract
-                     ** NO FIELD EXISTS **
                METHOD: 
                   - NAME: func2
                   - EXCEPTIONS THROWN: 
@@ -379,14 +368,12 @@ CLASS: ClassB
             - RETURN TYPE: int
             - MODIFIERS: public
          METHOD: 
-            - NAME: func0
-            - EXCEPTIONS THROWN: 
-               Exception
+            - NAME: func3
+            - EXCEPTIONS THROWN: NONE
             - PARAMETER TYPES: 
                int
-               boolean
             - RETURN TYPE: void
-            - MODIFIERS: public
+            - MODIFIERS: public abstract
          METHOD: 
             - NAME: func1
             - EXCEPTIONS THROWN: 
@@ -399,12 +386,14 @@ CLASS: ClassB
             - RETURN TYPE: void
             - MODIFIERS: public
          METHOD: 
-            - NAME: func3
-            - EXCEPTIONS THROWN: NONE
+            - NAME: func0
+            - EXCEPTIONS THROWN: 
+               Exception
             - PARAMETER TYPES: 
                int
+               boolean
             - RETURN TYPE: void
-            - MODIFIERS: public abstract
+            - MODIFIERS: public
          FIELD: 
             - NAME: val2
             - TYPE: ClassA
